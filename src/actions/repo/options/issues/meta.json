@@ -1,0 +1,11 @@
+{
+    "name": "pr option",
+    "scripts": [
+        {
+            "name": "create",
+            "file": "create.js",
+            "type": "command",
+            "description": "create issues"
+        }
+    ]
+}

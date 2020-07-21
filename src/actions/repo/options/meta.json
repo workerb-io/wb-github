@@ -1,0 +1,23 @@
+{
+    "name": "repos option",
+    "scripts": [
+        {
+            "name": "PRs",
+            "file": "PRs",
+            "type": "node",
+            "description": "PRs cheatsheet"
+        },
+        {
+            "name": "issues",
+            "file": "issues",
+            "type": "node",
+            "description": "issues cheatsheet"
+        },
+        {
+            "name": "delete",
+            "file": "delete.js",
+            "type": "command",
+            "description": "delete repo"
+        }
+    ]
+}

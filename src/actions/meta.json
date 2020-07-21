@@ -1,0 +1,15 @@
+{
+    "name": "github-workerb-app",
+    "description": "github app",
+    "sites": [
+        "https://www.github.com"
+    ],
+    "scripts": [
+        {
+            "name": "repo",
+            "file": "repo",
+            "type": "node",
+            "description": "repo cheatsheet"
+        }
+    ]
+}

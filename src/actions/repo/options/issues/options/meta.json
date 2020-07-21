@@ -1,0 +1,11 @@
+{
+    "name": "pr option",
+    "scripts": [
+        {
+            "name": "close",
+            "file": "close.js",
+            "type": "command",
+            "description": "close"
+        }
+    ]
+}
