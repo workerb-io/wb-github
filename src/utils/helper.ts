@@ -5,9 +5,7 @@ export const getUrl = (endPoint: string) => {
     return apiUrl + endPoint
 }
 
-export const decodeApiResponse = (apiRespone: string) => {
-    var result = JSON.parse(apiRespone)
-
+export const decodeApiResponse = (result: APIResponse) => {
     if (!result.response) {
         return {
             response: {},

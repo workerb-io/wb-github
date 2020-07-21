@@ -3,7 +3,7 @@ import { accessToken } from '../../utils/constants'
 
 var repoResponse = httpGet(getUrl("/user/repos?per_page=100"), {
     Authorization: "token " + accessToken
-}, true)
+})
 
 var repoApiResponse = decodeApiResponse(repoResponse)
 var repoList = repoApiResponse.response
