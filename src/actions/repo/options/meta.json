@@ -4,19 +4,25 @@
         {
             "name": "PRs",
             "file": "PRs",
-            "type": "node",
+            "type": "folder",
             "description": "PRs cheatsheet"
         },
         {
             "name": "issues",
             "file": "issues",
-            "type": "node",
+            "type": "folder",
             "description": "issues cheatsheet"
         },
         {
             "name": "delete",
             "file": "delete.js",
-            "type": "command",
+            "type": "action",
+            "description": "delete repo"
+        },
+        {
+            "name": "index",
+            "file": "index.js",
+            "type": "action",
             "description": "delete repo"
         }
     ]

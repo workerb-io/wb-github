@@ -4,8 +4,14 @@
         {
             "name": "close",
             "file": "close.js",
-            "type": "command",
+            "type": "action",
             "description": "close"
+        }, 
+        {
+            "name": "index",
+            "file": "index.js",
+            "type": "action",
+            "description": "index"
         }
     ]
 }

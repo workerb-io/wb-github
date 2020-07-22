@@ -4,8 +4,14 @@
         {
             "name": "create",
             "file": "create.js",
-            "type": "command",
+            "type": "action",
             "description": "create cheatsheet"
+        },
+        {
+            "name": "options",
+            "file": "options.js",
+            "type": "action",
+            "description": "options"
         }
     ]
 }

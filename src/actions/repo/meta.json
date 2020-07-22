@@ -5,8 +5,14 @@
         {
             "name": "new",
             "file": "new.js",
-            "type": "command",
+            "type": "action",
             "description": "new repo"
+        },
+        {
+            "name": "options",
+            "file": "options.js",
+            "type": "action",
+            "description": "list options"
         }
     ]
 }
