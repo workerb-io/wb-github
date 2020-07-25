@@ -1,6 +1,6 @@
 {
-    "name": "github-workerb-app",
-    "description": "github app",
+    "name": "github",
+    "description": "workerB package for github.com",
     "sites": [
         "https://www.github.com"
     ],
