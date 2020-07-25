@@ -1,0 +1,17 @@
+{
+    "name": "pr option",
+    "scripts": [
+        {
+            "name": "create",
+            "file": "create.js",
+            "type": "action",
+            "description": "create cheatsheet"
+        },
+        {
+            "name": "options",
+            "file": "options.js",
+            "type": "action",
+            "description": "options"
+        }
+    ]
+}
