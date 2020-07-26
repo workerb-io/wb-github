@@ -1,9 +1,5 @@
 <h1 align="center">wb-github</h1>
 <h3 align="center"><a href="https://workerb.io/">workerB</a> package for <a href="https://github.com/">Github</a></h3>
-<p align="center">
-	 <img height="300" width="600" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Social_dino-with-hat.gif">
-</p>
-<h3 align="center">For Github Pros</h3>
 
 ## Demo
 
