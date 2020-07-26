@@ -12,13 +12,8 @@
 
 <p align="center">
 
- <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/FZogrzyMrEM" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen
- >
- </iframe>
+ [![Workerb GitHub Package](http://img.youtube.com/vi/FZogrzyMrEM/0.jpg)](http://www.youtube.com/watch?v=FZogrzyMrEM "Workerb GitHub Package")
+
 </p>
 
 ## How to install:
