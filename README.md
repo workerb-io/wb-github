@@ -2,7 +2,7 @@
 
 
 
-<h1 style="text-align: center">For Github Pros</h1>
+<h1 align="center">For Github Pros</h1>
 
 <p style="text-align:center">
 	 <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Social_dino-with-hat.gif">
