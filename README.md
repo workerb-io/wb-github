@@ -4,7 +4,7 @@
 
 <h1 align="center">For Github Pros</h1>
 
-<p style="text-align:center">
+<p align="center">
 	 <img height="300" width="600" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Social_dino-with-hat.gif">
 </p>
 
