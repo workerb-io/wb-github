@@ -58,3 +58,5 @@
 * [`github repo ${repo} issues ${issue}`](./src/actions/repo/options/issues/options/index.ts) - Open selected issue.
 * [`github repo ${repo} issues create ${issueTitle}`](./src/actions/repo/options/issues/create.ts) - Create a new issue with provided title.
 * [`github repo ${repo} issues ${issue} close`](./src/actions/repo/options/issues/options/close.ts) - Close selected issue.
+
+**Get Support: http://forums.workerb.io/**
