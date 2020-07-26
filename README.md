@@ -10,7 +10,6 @@
 	 <img height="300" width="600" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Social_dino-with-hat.gif">
 </p>
 <h3 align="center">For Github Pros</h3>
-<hr>
 
 ## Demo
 
