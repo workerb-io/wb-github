@@ -5,12 +5,12 @@
 <h1 align="center">For Github Pros</h1>
 
 <p style="text-align:center">
-	 <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Social_dino-with-hat.gif">
+	 <img height="300" width="600" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Social_dino-with-hat.gif">
 </p>
 
 # Demo
 
-<p align="center">
+<p style="text-align:center">
 
  [![Workerb GitHub Package](http://img.youtube.com/vi/FZogrzyMrEM/0.jpg)](http://www.youtube.com/watch?v=FZogrzyMrEM "Workerb GitHub Package")
 
