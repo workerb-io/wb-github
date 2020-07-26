@@ -9,12 +9,14 @@
 </p>
 
 # Demo
-
-<p align="center">
-
- [![Workerb GitHub Package](http://img.youtube.com/vi/FZogrzyMrEM/0.jpg)](http://www.youtube.com/watch?v=FZogrzyMrEM "Workerb GitHub Package")
-
-</p>
+<div align="center">
+  <a href="http://www.youtube.com/watch?v=FZogrzyMrEM">
+ <img 
+  src="http://img.youtube.com/vi/FZogrzyMrEM/0.jpg" 
+  alt="Workerb GitHub Package" 
+  style="width:100%;">
+  </a>
+</div>
 
 ## How to install:
 * Create account on [workerb](https://workerb.io/).
