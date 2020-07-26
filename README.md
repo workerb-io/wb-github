@@ -9,10 +9,11 @@
 
 <div align="center">
   <a href="http://www.youtube.com/watch?v=FZogrzyMrEM">
- <img 
-  src="http://img.youtube.com/vi/FZogrzyMrEM/0.jpg" 
-  alt="Workerb GitHub Package" 
-  style="width:100%;">
+     <img 
+      src="https://user-images.githubusercontent.com/29889620/88480229-5ce5b200-cf72-11ea-803f-c2621d4570d4.png"
+      alt="Workerb GitHub Package" 
+      style="width:100%;"
+     >
   </a>
 </div>
 
