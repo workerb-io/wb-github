@@ -1,3 +1,8 @@
+<style>
+    * {
+        border-bottom: none;
+    }
+</style>
 
 <h1 align="center">wb-github</h1>
 <h3 align="center"><a href="https://workerb.io/">workerB</a> package for <a href="https://github.com/">Github</a></h3>
