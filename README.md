@@ -14,20 +14,14 @@
   <iframe src="https://www.youtube.com/embed/FZogrzyMrEM" width="560" height="315" frameborder="0"><a href="https://youtube-iframe.com"></a></iframe>
 </p>
 
-
-
 ## How to install:
-
 * Create account on [workerb](https://workerb.io/).
 * Install [workerb extension](https://chrome.google.com/webstore/detail/jdbakbjkiklbibfccegfejjdlcgpnnpe).
 * Add Github package.
 * Setup Github package.
 *  🚀🚀
 
-
-
 ## Development
-
 * To install project dependencies, run `yarn install`. 
 * To build the project, run `yarn build`.
 * To continuously build the project, run `yarn watch`.
