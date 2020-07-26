@@ -10,7 +10,7 @@
 
 # Demo
 
-<p style="text-align:center">
+<p align="center">
 
  [![Workerb GitHub Package](http://img.youtube.com/vi/FZogrzyMrEM/0.jpg)](http://www.youtube.com/watch?v=FZogrzyMrEM "Workerb GitHub Package")
 
