@@ -15,6 +15,20 @@ const entryPaths = helpers.getFiles(entryFiles, ".ts").map(file => file.replace(
 
 const metaFiles = helpers.getFiles(entryFiles, ".json")
 
+let copyPatterns = metaFiles.map(
+    (metaFile) => ({ from: './src/actions/' + metaFile, to: './' + metaFile })
+)
+
+const rootJSON = fs.readFileSync("./src/actions/meta.json", 'utf8')
+const rootJSONParsed = rootJSON ? JSON.parse(rootJSON) : {}
+
+let iconPath = ""
+
+if (rootJSONParsed.icon) {
+    iconPath = path.join("./src/actions", rootJSONParsed.icon)
+    copyPatterns.concat({ from: iconPath, to: './' })
+}
+
 module.exports = {
     entry: entryPaths.reduce((result, entryPath) => {
         result[entryPath] = "./src/actions/" + entryPath + ".ts"
@@ -47,9 +61,7 @@ module.exports = {
     },
     plugins: [
         new CopyPlugin({
-          patterns: metaFiles.map(
-            (metaFile) => ({ from: './src/actions/' + metaFile, to: './' + metaFile })
-          ),
+          patterns: copyPatterns,
           options: {
             concurrency: 100,
           },

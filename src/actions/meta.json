@@ -4,6 +4,7 @@
     "sites": [
         "https://www.github.com"
     ],
+    "icon": "logo.png",
     "scripts": [
         {
             "name": "repo",

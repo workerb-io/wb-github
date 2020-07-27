@@ -10,6 +10,12 @@
         },
         {
             "name": "options",
+            "file": "options",
+            "type": "folder",
+            "description": "actions for selected repo"
+        },
+        {
+            "name": "options",
             "file": "options.js",
             "type": "action",
             "description": "list options"

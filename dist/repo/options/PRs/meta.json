@@ -9,6 +9,12 @@
         },
         {
             "name": "options",
+            "file": "options",
+            "type": "folder",
+            "description": "actions for selected pr"
+        },
+        {
+            "name": "options",
             "file": "options.js",
             "type": "action",
             "description": "options"
