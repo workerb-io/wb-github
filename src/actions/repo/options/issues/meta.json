@@ -6,7 +6,13 @@
             "file": "create.js",
             "type": "action",
             "description": "create issues"
-        }, 
+        },
+        {
+            "name": "options",
+            "file": "options",
+            "type": "folder",
+            "description": "actions for selected issues"
+        },
         {
             "name": "options",
             "file": "options.js",
