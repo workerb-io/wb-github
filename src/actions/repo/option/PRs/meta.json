@@ -5,17 +5,17 @@
             "name": "create",
             "file": "create.js",
             "type": "action",
-            "description": "create issues"
+            "description": "create cheatsheet"
         },
         {
-            "name": "options",
-            "file": "options",
+            "name": "option",
+            "file": "option",
             "type": "folder",
-            "description": "actions for selected issues"
+            "description": "actions for selected pr"
         },
         {
-            "name": "options",
-            "file": "options.js",
+            "name": "get_options",
+            "file": "get_options.js",
             "type": "action",
             "description": "options"
         }

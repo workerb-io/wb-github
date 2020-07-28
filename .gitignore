@@ -1,7 +1,6 @@
 # package directories
 node_modules
 package-lock.json
-dist
 jspm_packages
 .firebase
 firebase-debug.log

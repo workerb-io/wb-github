@@ -9,14 +9,14 @@
             "description": "new repo"
         },
         {
-            "name": "options",
-            "file": "options",
+            "name": "option",
+            "file": "option",
             "type": "folder",
             "description": "actions for selected repo"
         },
         {
-            "name": "options",
-            "file": "options.js",
+            "name": "get_options",
+            "file": "get_options.js",
             "type": "action",
             "description": "list options"
         }
