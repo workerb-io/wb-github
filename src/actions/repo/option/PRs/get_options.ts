@@ -4,7 +4,7 @@ import { accessToken } from '../../../../utils/constants'
 let pullsList: any[] = []
 
 if (options.repo) {
-    var repoResponse = httpGet(getUrl("/repos/" + options.repo.owner.login + "/" + options.repo.name + "/pulls?per_page=100"), {
+    var repoResponse = httpGet(getUrl("/repos/" + options.repo.owner.login + "/" + options.repo.name + "/pulls?per_page=20"), {
         Authorization: "token " + accessToken
     })
     
