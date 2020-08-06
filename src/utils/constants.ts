@@ -1,2 +1,2 @@
 export const apiUrl = "https://api.github.com"
-export const accessToken = process.env.accessToken
+export const accessToken = VARS["accessToken"]

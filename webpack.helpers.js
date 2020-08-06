@@ -1,4 +1,3 @@
-const dotenv = require('dotenv');
 const fs = require('fs');
 var entryFiles = []
 const readDirectory = (path) => {
@@ -61,14 +60,8 @@ const getFiles = ( files = [], ext) => {
     const filteredfiles = splittedFilenames.filter(file => (file.length > 0))
     return filteredfiles
 }
-const env = dotenv.config().parsed;
-const envKeys = Object.keys(env).reduce((prev, next) => {
-    prev[`process.env.${next}`] = JSON.stringify(env[next]);
-    return prev;
-}, {})
 module.exports = {
     generateFS : generateFS,
     generateEntryPaths : generateEntryPaths,
-    getFiles: getFiles,
-    envKeys: envKeys
+    getFiles: getFiles
 }

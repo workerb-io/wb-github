@@ -1,6 +1,5 @@
 
 const path = require('path')
-const dotenv = require('dotenv')
 const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const fs = require('fs');
@@ -65,7 +64,6 @@ module.exports = {
           options: {
             concurrency: 100,
           },
-        }),
-        new webpack.DefinePlugin(helpers.envKeys)
+        })
     ]
 }
