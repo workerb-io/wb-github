@@ -25,4 +25,4 @@ if (organisationName) {
 
 click('Create repository')
 notify("Repository created", "success", 3000)
-
+reIndex(["github", "repo"])

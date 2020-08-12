@@ -17,6 +17,7 @@ if (options.repo) {
     switch (deleteResponse.status) {
         case 204:
             notify('repository deleted', "success", 3000)
+            reIndex(["github", "repo", options.repo.name])
             break;
         case 403:
         case 404:
