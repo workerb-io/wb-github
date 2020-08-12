@@ -1,7 +1,7 @@
 import { getUrl, decodeApiResponse } from "../../utils/helper"
 import { accessToken } from '../../utils/constants'
 
-var repoResponse = httpGet(getUrl("/user/repos?per_page=20"), {
+var repoResponse = httpGet(getUrl(`/user/repos?per_page=20&_=${new Date().getTime()}`), {
     Authorization: "token " + accessToken
 })
 

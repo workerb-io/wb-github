@@ -1,2 +1,2 @@
 declare var VARS: any
-declare var reIndex: (path?: Array) => void
+declare var reIndex: (path?: string[]) => void
