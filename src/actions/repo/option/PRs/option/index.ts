@@ -1,10 +1,8 @@
 if (options.repo) {
     if (options.PRs) {
         open(options.PRs.html_url)
-    } else if (args[0]) {
-        open(options.repo.html_url + "/pulls?q=" + args[0])
     } else {
-        open(options.repo.html_url + "/pulls")
+        notify("PR not found", "error", 3000)
     }
 } else {
     notify("Repo not found", "error", 3000)
