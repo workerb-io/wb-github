@@ -19,14 +19,16 @@ const returnOptions = () => {
     }
 
     return JSON.stringify(
-        repoList.map((repo: any) => {
-            return {
-                name: repo.name,
-                description: repo.html_url,
-                html_url: repo.html_url,
-                owner: repo.owner
-            }
-        })
+        {
+            add: repoList.map((repo: any) => {
+                return {
+                    name: repo.name,
+                    description: repo.html_url,
+                    html_url: repo.html_url,
+                    owner: repo.owner
+                }
+            })
+        }
     )
 }
 
