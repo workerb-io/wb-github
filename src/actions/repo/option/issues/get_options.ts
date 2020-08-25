@@ -10,8 +10,8 @@ if (options.repo) {
 }
 
 export default () => {
-    return JSON.stringify(
-        issuesList.map(function (pull) {
+    return JSON.stringify({
+        add: issuesList.map(function (pull) {
             return {
                 name: "#" + pull.number,
                 description: pull.title + "(" + pull.state + ")",
@@ -19,5 +19,5 @@ export default () => {
                 user: pull.user
             }
         })
-    )
+    })
 }

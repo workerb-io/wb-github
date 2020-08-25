@@ -12,8 +12,8 @@ if (options.repo) {
 }
 
 export default () => {
-    return JSON.stringify(
-        pullsList.map(function (pull: any) {
+    return JSON.stringify({
+        add: pullsList.map(function (pull: any) {
             return {
                 name: "#" + pull.number,
                 description: pull.title + "(" + pull.state + ")",
@@ -21,5 +21,5 @@ export default () => {
                 user: pull.user
             }
         })
-    )
+    })
 }
