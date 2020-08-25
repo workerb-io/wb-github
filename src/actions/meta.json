@@ -11,6 +11,12 @@
             "file": "repo",
             "type": "folder",
             "description": "repo cheatsheet"
+        },
+        {
+            "name": "get_options",
+            "file": "get_options.js",
+            "type": "action",
+            "description": "list options"
         }
     ]
 }
