@@ -13,10 +13,10 @@
             "description": "repo cheatsheet"
         },
         {
-            "name": "get_options",
-            "file": "get_options.js",
+            "name": "setup",
+            "file": "setup.js",
             "type": "action",
-            "description": "list options"
+            "description": "setup github"
         }
     ]
 }
