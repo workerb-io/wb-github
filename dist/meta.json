@@ -16,7 +16,7 @@
             "name": "setup",
             "file": "setup.js",
             "type": "action",
-            "description": "setup github"
+            "description": "setup github accessToken"
         }
     ]
 }
