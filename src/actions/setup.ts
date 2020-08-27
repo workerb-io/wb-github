@@ -7,5 +7,5 @@ if (!accessToken) {
         name: 'accessToken',
         value: accessToken
     }])
-    reIndex(["github"])
+    reIndex()
 }
