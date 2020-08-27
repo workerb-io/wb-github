@@ -9,6 +9,14 @@ const returnOptions = () => {
                 ]
             }
         )
+    } else {
+        return JSON.stringify(
+            {
+                remove: [
+                    { name: "setup" }
+                ]
+            }
+        )
     }
 }
 
