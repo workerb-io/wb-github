@@ -1,12 +1,12 @@
-let accessToken = prompt("Please provide your accessToken")
+let accessToken = prompt("Please provide your access token")
 
 if (!accessToken) {
-    notify("accessToken can't be empty", "error", 3000)
+    notify("Access token can't be empty", "error", 3000)
 } else {
     setVar('github', [{
         name: 'accessToken',
         value: accessToken
     }])
-    notify("accessToken added successfully", "success", 3000)
-    reIndex()
+    notify("Access token added successfully", "success", 3000)
+    reIndex(["github"])
 }
