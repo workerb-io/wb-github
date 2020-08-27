@@ -8,5 +8,5 @@ if (!accessToken) {
         value: accessToken
     }])
     notify("Access token added successfully", "success", 3000)
-    reIndex(["github"])
+    reIndex()
 }
