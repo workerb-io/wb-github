@@ -7,5 +7,6 @@ if (!accessToken) {
         name: 'accessToken',
         value: accessToken
     }])
+    notify("accessToken added successfully", "success", 3000)
     reIndex()
 }
