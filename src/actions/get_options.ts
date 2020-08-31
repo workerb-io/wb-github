@@ -5,7 +5,7 @@ const returnOptions = () => {
         return JSON.stringify(
             {
                 remove: [
-                    { name: "repo" }
+                    "repo"
                 ]
             }
         )
@@ -13,7 +13,7 @@ const returnOptions = () => {
         return JSON.stringify(
             {
                 remove: [
-                    { name: "setup" }
+                    "setup"
                 ]
             }
         )
