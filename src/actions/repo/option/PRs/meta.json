@@ -18,6 +18,12 @@
             "file": "get_options.js",
             "type": "action",
             "description": "options"
+        },
+        {
+            "name": "index",
+            "file": "index.js",
+            "type": "action",
+            "description": "index"
         }
     ]
 }
