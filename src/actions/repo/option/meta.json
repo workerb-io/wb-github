@@ -23,7 +23,7 @@
             "name": "index",
             "file": "index.js",
             "type": "action",
-            "description": "delete repo"
+            "description": "index"
         }
     ]
 }
