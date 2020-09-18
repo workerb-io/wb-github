@@ -1,0 +1,29 @@
+{
+    "name": "pr option",
+    "scripts": [
+        {
+            "name": "create",
+            "file": "create.js",
+            "type": "action",
+            "description": "create cheatsheet"
+        },
+        {
+            "name": "option",
+            "file": "option",
+            "type": "folder",
+            "description": "actions for selected pr"
+        },
+        {
+            "name": "get_options",
+            "file": "get_options.js",
+            "type": "action",
+            "description": "options"
+        },
+        {
+            "name": "index",
+            "file": "index.js",
+            "type": "action",
+            "description": "index"
+        }
+    ]
+}

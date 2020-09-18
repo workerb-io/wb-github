@@ -7,8 +7,8 @@
     "icon": "logo.png",
     "scripts": [
         {
-            "name": "repo",
-            "file": "repo",
+            "name": "repos",
+            "file": "repos",
             "type": "folder",
             "description": "repo cheatsheet"
         },
