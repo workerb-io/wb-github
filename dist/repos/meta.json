@@ -1,0 +1,30 @@
+{
+    "name": "repos",
+    "description": "repos cheatsheet",
+    "scripts": [
+        {
+            "name": "new",
+            "file": "new.js",
+            "type": "action",
+            "description": "new repo"
+        },
+        {
+            "name": "option",
+            "file": "option",
+            "type": "folder",
+            "description": "actions for selected repo"
+        },
+        {
+            "name": "get_options",
+            "file": "get_options.js",
+            "type": "action",
+            "description": "list options"
+        }, 
+        {
+            "name": "index",
+            "file": "index.js",
+            "type": "action",
+            "description": "index"
+        }   
+    ]
+}
