@@ -5,7 +5,7 @@ const returnOptions = () => {
         return JSON.stringify(
             {
                 remove: [
-                    "repo"
+                    "repos"
                 ]
             }
         )

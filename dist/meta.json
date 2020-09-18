@@ -10,7 +10,7 @@
             "name": "repos",
             "file": "repos",
             "type": "folder",
-            "description": "repo cheatsheet"
+            "description": "Repositories"
         },
         {
             "name": "get_options",
