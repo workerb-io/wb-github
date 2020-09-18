@@ -5,19 +5,19 @@
             "name": "PRs",
             "file": "PRs",
             "type": "folder",
-            "description": "PRs cheatsheet"
+            "description": "List of Pull Requests"
         },
         {
             "name": "issues",
             "file": "issues",
             "type": "folder",
-            "description": "issues cheatsheet"
+            "description": "List of Issues"
         },
         {
             "name": "delete",
             "file": "delete.js",
             "type": "action",
-            "description": "delete repo"
+            "description": "Delete the repository"
         },
         {
             "name": "index",
