@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar accessToken = prompt(\"Please provide your access token\");\nif (!accessToken) {\n    notify(\"Access token can't be empty\", \"error\", 3000);\n}\nelse {\n    setVar('github', [{\n            name: 'accessToken',\n            value: accessToken\n        }]);\n    notify(\"Access token added successfully\", \"success\", 3000);\n    reIndex();\n}\n\n\n//# sourceURL=webpack://main/./src/actions/setup.ts?");
+eval("\nvar accessToken = prompt(\"Access token for your github account\");\nif (!accessToken) {\n    notify(\"Access token can't be empty\", \"error\", 3000);\n}\nelse {\n    setVar('github', [{\n            name: 'accessToken',\n            value: accessToken\n        }]);\n    notify(\"Access token added successfully\", \"success\", 3000);\n    reIndex();\n}\n\n\n//# sourceURL=webpack://main/./src/actions/setup.ts?");
 
 /***/ })
 
