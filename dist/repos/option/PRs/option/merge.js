@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repo/option/PRs/option/close.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/PRs/option/merge.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repo/option/PRs/option/close.ts":
-/*!*****************************************************!*\
-  !*** ./src/actions/repo/option/PRs/option/close.ts ***!
-  \*****************************************************/
+/***/ "./src/actions/repos/option/PRs/option/merge.ts":
+/*!******************************************************!*\
+  !*** ./src/actions/repos/option/PRs/option/merge.ts ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.PRs) {\n    open(options.PRs.html_url);\n    click(\"Close pull request\");\n    notify(\"PR closed\", \"success\", 3000);\n    reIndex([\"github\", \"repo\", options.repo.name, \"PRs\"]);\n}\nelse {\n    notify(\"PR not found\", \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repo/option/PRs/option/close.ts?");
+eval("\nif (options.PRs) {\n    open(options.PRs.html_url);\n    click(\"Merge pull request\");\n    click(\"Confirm merge\");\n    notify(\"PR merged\", \"success\", 3000);\n    reIndex([\"github\", \"repo\", options.repo.name]);\n    reIndex([\"github\", \"repo\", options.repo.name, \"PRs\"]);\n}\nelse {\n    notify(\"PR not found\", \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/PRs/option/merge.ts?");
 
 /***/ })
 

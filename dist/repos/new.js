@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repo/index.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/new.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repo/index.ts":
-/*!***********************************!*\
-  !*** ./src/actions/repo/index.ts ***!
-  \***********************************/
+/***/ "./src/actions/repos/new.ts":
+/*!**********************************!*\
+  !*** ./src/actions/repos/new.ts ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (args[0]) {\n    open(\"https://github.com/search?q=\" + args[0]);\n}\nelse {\n    open(\"https://github.com/search\");\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repo/index.ts?");
+eval("\nopen(\"https://github.com/new\");\nvar organisationName = args[1];\nvar repoName = args[0];\nif (!repoName) {\n    repoName = prompt(\"Name for the new repository\");\n}\nclick('#repository_name', { method: 'by_query_selector' });\nvar repoNameAsString = repoName;\ntype(repoNameAsString, '#repository_name', { method: 'by_query_selector' });\nlog(\"Checking if the organisation name is provided\", \"info\");\nif (organisationName) {\n    click('[aria-describedby=\"repository-owner-label\"]', {\n        method: \"by_query_selector\"\n    });\n    click('[data-org-name=\"' + organisationName + '\"]', {\n        method: \"by_query_selector\"\n    });\n}\nlog(\"Creating the repository\", \"info\");\nclick('Create repository', {\n    expectReload: true\n});\nnotify(\"Repository created\", \"success\", 3000);\nreIndex([\"github\", \"repo\"]);\n\n\n//# sourceURL=webpack://main/./src/actions/repos/new.ts?");
 
 /***/ })
 

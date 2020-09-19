@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar constants_1 = __webpack_require__(/*! ../utils/constants */ \"./src/utils/constants.ts\");\nvar returnOptions = function () {\n    if (!constants_1.accessToken) {\n        return JSON.stringify({\n            remove: [\n                \"repo\"\n            ]\n        });\n    }\n    else {\n        return JSON.stringify({\n            remove: [\n                \"setup\"\n            ]\n        });\n    }\n};\nexports.default = returnOptions;\n\n\n//# sourceURL=webpack://main/./src/actions/get_options.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar constants_1 = __webpack_require__(/*! ../utils/constants */ \"./src/utils/constants.ts\");\nvar returnOptions = function () {\n    if (!constants_1.accessToken) {\n        return JSON.stringify({\n            remove: [\n                \"repos\"\n            ]\n        });\n    }\n    else {\n        return JSON.stringify({\n            remove: [\n                \"setup\"\n            ]\n        });\n    }\n};\nexports.default = returnOptions;\n\n\n//# sourceURL=webpack://main/./src/actions/get_options.ts?");
 
 /***/ }),
 

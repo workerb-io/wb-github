@@ -91,20 +91,44 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repo/option/issues/option/close.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/delete.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repo/option/issues/option/close.ts":
-/*!********************************************************!*\
-  !*** ./src/actions/repo/option/issues/option/close.ts ***!
-  \********************************************************/
+/***/ "./src/actions/repos/option/delete.ts":
+/*!********************************************!*\
+  !*** ./src/actions/repos/option/delete.ts ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.issues) {\n    open(options.issues.html_url);\n    click(\"Close issue\");\n    notify(\"Issue closed\", \"success\", 3000);\n    reIndex([\"github\", \"repo\", options.repo.name, \"issues\"]);\n}\nelse {\n    notify(\"Issue not found\", \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repo/option/issues/option/close.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../../utils/constants */ \"./src/utils/constants.ts\");\nif (options.repo) {\n    var userResponse = httpGet(helper_1.getUrl(\"/user\"), {\n        Authorization: \"token \" + constants_1.accessToken\n    });\n    var user = helper_1.decodeApiResponse(userResponse).response;\n    var deleteRawResponse = httpDelete(helper_1.getUrl(\"/repos/\" + user.login + \"/\" + options.repo.name), null, {\n        Authorization: \"token \" + constants_1.accessToken\n    });\n    var deleteResponse = helper_1.decodeApiResponse(deleteRawResponse);\n    switch (deleteResponse.status) {\n        case 204:\n            notify('repository deleted', \"success\", 3000);\n            reIndex([\"github\", \"repo\"]);\n            break;\n        case 403:\n        case 404:\n            notify(deleteResponse.response.message, \"error\", 3000);\n            break;\n    }\n}\nelse {\n    notify('Repo not found', \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/delete.ts?");
+
+/***/ }),
+
+/***/ "./src/utils/constants.ts":
+/*!********************************!*\
+  !*** ./src/utils/constants.ts ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.accessToken = exports.apiUrl = void 0;\nexports.apiUrl = \"https://api.github.com\";\nexports.accessToken = VARS[\"accessToken\"];\n\n\n//# sourceURL=webpack://main/./src/utils/constants.ts?");
+
+/***/ }),
+
+/***/ "./src/utils/helper.ts":
+/*!*****************************!*\
+  !*** ./src/utils/helper.ts ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.decodeApiResponse = exports.getUrl = void 0;\nvar constants_1 = __webpack_require__(/*! ./constants */ \"./src/utils/constants.ts\");\nexports.getUrl = function (endPoint) {\n    return constants_1.apiUrl + endPoint;\n};\nexports.decodeApiResponse = function (result) {\n    if (!result.response) {\n        return {\n            response: {},\n            status: result.status\n        };\n    }\n    return {\n        response: JSON.parse(result.response),\n        status: result.status\n    };\n};\n\n\n//# sourceURL=webpack://main/./src/utils/helper.ts?");
 
 /***/ })
 

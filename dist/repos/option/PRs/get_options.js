@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repo/get_options.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/PRs/get_options.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repo/get_options.ts":
-/*!*****************************************!*\
-  !*** ./src/actions/repo/get_options.ts ***!
-  \*****************************************/
+/***/ "./src/actions/repos/option/PRs/get_options.ts":
+/*!*****************************************************!*\
+  !*** ./src/actions/repos/option/PRs/get_options.ts ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../utils/constants */ \"./src/utils/constants.ts\");\nvar repoResponse = httpGet(helper_1.getUrl(\"/user/repos?per_page=20&_=\" + new Date().getTime()), {\n    Authorization: \"token \" + constants_1.accessToken\n});\nvar repoApiResponse = helper_1.decodeApiResponse(repoResponse);\nvar repoList = repoApiResponse.response;\nvar returnOptions = function () {\n    switch (repoApiResponse.status) {\n        case 401:\n        case 500:\n        case 403:\n        case 404:\n            notify(repoApiResponse.response.message, \"error\", 3000);\n            return;\n    }\n    return JSON.stringify({\n        add: repoList.map(function (repo) {\n            return {\n                name: repo.name,\n                description: repo.html_url,\n                html_url: repo.html_url,\n                owner: repo.owner\n            };\n        })\n    });\n};\nexports.default = returnOptions;\n\n\n//# sourceURL=webpack://main/./src/actions/repo/get_options.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../../../utils/constants */ \"./src/utils/constants.ts\");\nvar pullsList = [];\nif (options.repo) {\n    var repoResponse = httpGet(helper_1.getUrl(\"/repos/\" + options.repo.owner.login + \"/\" + options.repo.name + \"/pulls?per_page=20&_=\" + new Date().getTime()), {\n        Authorization: \"token \" + constants_1.accessToken\n    });\n    pullsList = helper_1.decodeApiResponse(repoResponse).response;\n}\nexports.default = (function () {\n    return JSON.stringify({\n        add: pullsList.map(function (pull) {\n            return {\n                name: \"#\" + pull.number,\n                description: pull.title + \"(\" + pull.state + \")\",\n                html_url: pull.html_url,\n                user: pull.user\n            };\n        })\n    });\n});\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/PRs/get_options.ts?");
 
 /***/ }),
 

@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repo/option/issues/option/index.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/issues/option/index.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repo/option/issues/option/index.ts":
-/*!********************************************************!*\
-  !*** ./src/actions/repo/option/issues/option/index.ts ***!
-  \********************************************************/
+/***/ "./src/actions/repos/option/issues/option/index.ts":
+/*!*********************************************************!*\
+  !*** ./src/actions/repos/option/issues/option/index.ts ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repo) {\n    if (options.issues) {\n        open(options.issues.html_url);\n    }\n    else if (args[0]) {\n        open(options.repo.html_url + \"/issues?q=\" + args[0]);\n    }\n    else {\n        open(options.repo.html_url + \"/issues\");\n    }\n}\nelse {\n    notify(\"Repo not found\", \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repo/option/issues/option/index.ts?");
+eval("\nif (options.repo) {\n    if (options.issues) {\n        open(options.issues.html_url);\n    }\n    else if (args[0]) {\n        open(options.repo.html_url + \"/issues?q=\" + args[0]);\n    }\n    else {\n        open(options.repo.html_url + \"/issues\");\n    }\n}\nelse {\n    notify(\"Repo not found\", \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/option/index.ts?");
 
 /***/ })
 

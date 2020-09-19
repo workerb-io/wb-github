@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repo/option/PRs/index.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/issues/option/close.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repo/option/PRs/index.ts":
-/*!**********************************************!*\
-  !*** ./src/actions/repo/option/PRs/index.ts ***!
-  \**********************************************/
+/***/ "./src/actions/repos/option/issues/option/close.ts":
+/*!*********************************************************!*\
+  !*** ./src/actions/repos/option/issues/option/close.ts ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repo) {\n    if (args[0]) {\n        open(options.repo.html_url + \"/pulls?q=\" + args[0]);\n    }\n    else {\n        open(options.repo.html_url + \"/pulls\");\n    }\n}\nelse {\n    notify(\"Repo not found\", \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repo/option/PRs/index.ts?");
+eval("\nif (options.issues) {\n    open(options.issues.html_url);\n    click(\"Close issue\");\n    notify(\"Issue closed\", \"success\", 3000);\n    reIndex([\"github\", \"repo\", options.repo.name, \"issues\"]);\n}\nelse {\n    notify(\"Issue not found\", \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/option/close.ts?");
 
 /***/ })
 

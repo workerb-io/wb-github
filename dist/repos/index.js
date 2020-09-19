@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repo/option/index.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/index.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repo/option/index.ts":
-/*!******************************************!*\
-  !*** ./src/actions/repo/option/index.ts ***!
-  \******************************************/
+/***/ "./src/actions/repos/index.ts":
+/*!************************************!*\
+  !*** ./src/actions/repos/index.ts ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repo) {\n    open(options.repo.html_url);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repo/option/index.ts?");
+eval("\nif (args[0]) {\n    open(\"https://github.com/search?q=\" + args[0]);\n}\nelse {\n    open(\"https://github.com/search\");\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/index.ts?");
 
 /***/ })
 

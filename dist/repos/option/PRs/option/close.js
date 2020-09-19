@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repo/option/issues/create.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/PRs/option/close.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repo/option/issues/create.ts":
-/*!**************************************************!*\
-  !*** ./src/actions/repo/option/issues/create.ts ***!
-  \**************************************************/
+/***/ "./src/actions/repos/option/PRs/option/close.ts":
+/*!******************************************************!*\
+  !*** ./src/actions/repos/option/PRs/option/close.ts ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repo) {\n    open(options.repo.html_url + \"/issues/new\");\n    type(args.join(\" \"), '#issue_title', { method: 'by_query_selector' });\n    click(\"Submit new issue\", { expectReload: true });\n    notify(\"issue created\", \"success\", 3000);\n    reIndex([\"github\", \"repo\", options.repo.name, \"issues\"]);\n}\nelse {\n    notify('repo not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repo/option/issues/create.ts?");
+eval("\nif (options.PRs) {\n    open(options.PRs.html_url);\n    click(\"Close pull request\");\n    notify(\"PR closed\", \"success\", 3000);\n    reIndex([\"github\", \"repo\", options.repo.name, \"PRs\"]);\n}\nelse {\n    notify(\"PR not found\", \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/PRs/option/close.ts?");
 
 /***/ })
 

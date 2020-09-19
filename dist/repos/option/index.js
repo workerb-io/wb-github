@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repo/new.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/index.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repo/new.ts":
-/*!*********************************!*\
-  !*** ./src/actions/repo/new.ts ***!
-  \*********************************/
+/***/ "./src/actions/repos/option/index.ts":
+/*!*******************************************!*\
+  !*** ./src/actions/repos/option/index.ts ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nopen(\"https://github.com/\");\nlog(\"opening github\", \"info\");\nclick('/html/body/div[1]/header/div[6]/details/summary', { method: 'by_xpath' });\nclick('New repository', { expectReload: true });\nclick('#repository_name', { method: 'by_query_selector' });\nvar organisationName = args[1];\nvar repoName = args[0];\nif (!repoName) {\n    log(\"repo name was not provided asking for repo name\", \"warning\");\n    repoName = prompt(\"provide a valid name for your new repository\");\n}\nvar repoNameAsString = repoName;\ntype(repoNameAsString, '#repository_name', { method: 'by_query_selector' });\nlog(\"checking if organisation name is provided\", \"info\");\nif (organisationName) {\n    click('[aria-describedby=\"repository-owner-label\"]', {\n        method: \"by_query_selector\"\n    });\n    click('[data-org-name=\"' + organisationName + '\"]', {\n        method: \"by_query_selector\"\n    });\n}\nlog(\"Creating the repository\", \"info\");\nclick('Create repository', {\n    expectReload: true\n});\nnotify(\"Repository created\", \"success\", 3000);\nreIndex([\"github\", \"repo\"]);\n\n\n//# sourceURL=webpack://main/./src/actions/repo/new.ts?");
+eval("\nif (options.repo) {\n    open(options.repo.html_url);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/index.ts?");
 
 /***/ })
 
