@@ -10,7 +10,7 @@
             "name": "repos",
             "file": "repos",
             "type": "folder",
-            "description": "Repositories"
+            "description": "List of Repositories"
         },
         {
             "name": "get_options",
@@ -22,7 +22,7 @@
             "name": "setup",
             "file": "setup.js",
             "type": "action",
-            "description": "setup github accessToken"
+            "description": "Package setup"
         }
     ]
 }
