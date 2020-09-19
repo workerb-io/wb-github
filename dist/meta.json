@@ -22,7 +22,7 @@
             "name": "setup",
             "file": "setup.js",
             "type": "action",
-            "description": "Package setup"
+            "description": "Setup the package"
         }
     ]
 }
