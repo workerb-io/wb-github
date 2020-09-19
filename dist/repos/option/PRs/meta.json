@@ -5,7 +5,7 @@
             "name": "create",
             "file": "create.js",
             "type": "action",
-            "description": "create cheatsheet"
+            "description": "Create a new pull request"
         },
         {
             "name": "option",

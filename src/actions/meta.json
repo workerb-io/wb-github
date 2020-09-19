@@ -7,10 +7,10 @@
     "icon": "logo.png",
     "scripts": [
         {
-            "name": "repo",
-            "file": "repo",
+            "name": "repos",
+            "file": "repos",
             "type": "folder",
-            "description": "repo cheatsheet"
+            "description": "List of repositories"
         },
         {
             "name": "get_options",
@@ -22,7 +22,7 @@
             "name": "setup",
             "file": "setup.js",
             "type": "action",
-            "description": "setup github accessToken"
+            "description": "Setup the package"
         }
     ]
 }
