@@ -6,7 +6,7 @@
             "name": "new",
             "file": "new.js",
             "type": "action",
-            "description": "Create a new repo"
+            "description": "Create a new repository"
         },
         {
             "name": "option",
