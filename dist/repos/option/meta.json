@@ -5,7 +5,7 @@
             "name": "PRs",
             "file": "PRs",
             "type": "folder",
-            "description": "List of Pull Requests"
+            "description": "List of pull requests"
         },
         {
             "name": "issues",
