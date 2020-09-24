@@ -1,3 +1,3 @@
-if (options.repo) {
-    open(options.repo.html_url)
+if (options.repos) {
+    open(options.repos.html_url)
 }

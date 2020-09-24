@@ -8,7 +8,7 @@ if (options.repo) {
 
     var user = decodeApiResponse(userResponse).response
 
-    var deleteRawResponse = httpDelete(getUrl("/repos/" + user.login + "/" + options.repo.name), null, {
+    var deleteRawResponse = httpDelete(getUrl("/repos/" + user.login + "/" + options.repos.name), null, {
         Authorization: "token " + accessToken
     })
 
