@@ -8,12 +8,6 @@
             "description": "List of pull requests"
         },
         {
-            "name": "issues",
-            "file": "issues",
-            "type": "folder",
-            "description": "List of Issues"
-        },
-        {
             "name": "branches",
             "file": "branches",
             "type": "folder",
