@@ -14,6 +14,18 @@
             "description": "List of Issues"
         },
         {
+            "name": "branches",
+            "file": "branches",
+            "type": "folder",
+            "description": "List of Branches"
+        },
+        {
+            "name": "issues",
+            "file": "issues",
+            "type": "folder",
+            "description": "List of Issues"
+        },
+        {
             "name": "delete",
             "file": "delete.js",
             "type": "action",
