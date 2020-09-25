@@ -1,0 +1,11 @@
+{
+    "name": "repos option",
+    "scripts": [
+        {
+            "name": "index",
+            "file": "index.js",
+            "type": "action",
+            "description": "index"
+        }
+    ]
+}
