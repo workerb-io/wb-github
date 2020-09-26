@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/delete.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/branches/get_options.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repos/option/delete.ts":
-/*!********************************************!*\
-  !*** ./src/actions/repos/option/delete.ts ***!
-  \********************************************/
+/***/ "./src/actions/repos/option/branches/get_options.ts":
+/*!**********************************************************!*\
+  !*** ./src/actions/repos/option/branches/get_options.ts ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../../utils/constants */ \"./src/utils/constants.ts\");\nif (options.repo) {\n    var userResponse = httpGet(helper_1.getUrl(\"/user\"), {\n        Authorization: \"token \" + constants_1.accessToken\n    });\n    var user = helper_1.decodeApiResponse(userResponse).response;\n    var deleteRawResponse = httpDelete(helper_1.getUrl(\"/repos/\" + user.login + \"/\" + options.repos.name), null, {\n        Authorization: \"token \" + constants_1.accessToken\n    });\n    var deleteResponse = helper_1.decodeApiResponse(deleteRawResponse);\n    switch (deleteResponse.status) {\n        case 204:\n            notify('repository deleted', \"success\", 3000);\n            reIndex([\"github\", \"repo\"]);\n            break;\n        case 403:\n        case 404:\n            notify(deleteResponse.response.message, \"error\", 3000);\n            break;\n    }\n}\nelse {\n    notify('Repo not found', \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/delete.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../../../utils/constants */ \"./src/utils/constants.ts\");\nvar branchesList = [];\nif (options.repos) {\n    var branchResponse = httpGet(helper_1.getUrl(\"/repos/\" + options.repos.owner.login + \"/\" + options.repos.name + \"/branches?per_page=20&_=\" + new Date().getTime()), {\n        Authorization: \"token \" + constants_1.accessToken\n    });\n    branchesList = helper_1.decodeApiResponse(branchResponse).response;\n}\nexports.default = (function () {\n    return JSON.stringify({\n        add: branchesList.map(function (branch) {\n            return {\n                name: branch.name,\n                description: branch.commit.sha,\n                html_url: options.repos.html_url + \"/commit/\" + branch.commit.sha,\n            };\n        })\n    });\n});\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/branches/get_options.ts?");
 
 /***/ }),
 

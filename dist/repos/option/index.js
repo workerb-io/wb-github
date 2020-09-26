@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repo) {\n    open(options.repo.html_url);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/index.ts?");
+eval("\nif (options.repos) {\n    open(options.repos.html_url);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/index.ts?");
 
 /***/ })
 

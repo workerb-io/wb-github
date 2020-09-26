@@ -15,6 +15,7 @@ if (currentUrl.indexOf("login") === -1) {
   }
 
   let workerbToken = !previousWorkerbTokens.length ? '' : previousWorkerbTokens.sort()[previousWorkerbTokens.length - 1]
+  
   tokenName = workerbToken
     ? workerbToken.trim().slice(-1) ===
       parseInt(workerbToken.trim().slice(-1), 10).toString()

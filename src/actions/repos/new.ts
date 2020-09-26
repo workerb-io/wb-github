@@ -21,9 +21,15 @@ if (organisationName) {
     })
 }
 
+click('Private')
+
 log("Creating the repository", "info")
 click('Create repository', {
     expectReload: true
 })
 notify("Repository created", "success", 3000)
 reIndex(["github", "repo"])
+
+
+
+// Abstract knowledge -> Inflated knowledge -> Smart recommender??  
