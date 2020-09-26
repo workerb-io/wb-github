@@ -13,6 +13,12 @@
             "description": "List of repositories"
         },
         {
+            "name": "search",
+            "file": "search",
+            "type": "action",
+            "description": "Search Github"
+        },
+        {
             "name": "get_options",
             "file": "get_options.js",
             "type": "action",
@@ -22,7 +28,7 @@
             "name": "setup",
             "file": "setup.js",
             "type": "action",
-            "description": "Setup the package"
+            "description": "Setup the Github automation package"
         }
     ]
 }
