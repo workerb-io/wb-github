@@ -14,7 +14,7 @@
         },
         {
             "name": "search",
-            "file": "search",
+            "file": "search.js",
             "type": "action",
             "description": "Search Github"
         },
