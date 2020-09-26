@@ -22,7 +22,7 @@
             "name": "get_options",
             "file": "get_options.js",
             "type": "action",
-            "description": "get option"
+            "description": "get options"
         },
         {
             "name": "setup",
