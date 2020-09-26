@@ -1,4 +1,4 @@
-let tokenName = "workerb";
+let tokenName = "workerB";
 
 open("https://github.com/settings/tokens");
 
