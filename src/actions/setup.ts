@@ -6,15 +6,15 @@ const currentUrl = readURL();
 
 if (currentUrl.indexOf("login") === -1) {
   const allTokenNames = readAll("span.token-description a");
-
-  let workerbToken = "";
+  const previousWorkerbTokens = []
 
   for (const token of allTokenNames) {
     if (token.toLowerCase().indexOf(tokenName) !== -1) {
-      workerbToken = token;
+      previousWorkerbTokens.push(token.trim());
     }
   }
 
+  let workerbToken = !previousWorkerbTokens.length ? '' : previousWorkerbTokens.sort()[previousWorkerbTokens.length - 1]
   tokenName = workerbToken
     ? workerbToken.trim().slice(-1) ===
       parseInt(workerbToken.trim().slice(-1), 10).toString()
