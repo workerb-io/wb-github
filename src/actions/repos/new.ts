@@ -28,7 +28,7 @@ click('Create repository', {
     expectReload: true
 })
 notify("Repository created", "success", 3000)
-reIndex(["github", "repo"])
+reIndex(["github", "repos"])
 
 
 

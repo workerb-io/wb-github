@@ -2,10 +2,16 @@
     "name": "repos option",
     "scripts": [
         {
-            "name": "index",
-            "file": "index.js",
+            "name": "open",
+            "file": "open.js",
             "type": "action",
-            "description": "index"
+            "description": "Open the branch"
+        }, 
+        {
+            "name": "pr",
+            "file": "pr.js",
+            "type": "action",
+            "description": "Create a PR"
         }
     ]
 }

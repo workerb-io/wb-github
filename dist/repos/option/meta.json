@@ -29,7 +29,7 @@
             "name": "open",
             "file": "open.js",
             "type": "action",
-            "description": "index"
+            "description": "Open the repository"
         }
     ]
 }

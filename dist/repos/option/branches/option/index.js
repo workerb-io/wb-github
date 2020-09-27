@@ -101,10 +101,9 @@ return /******/ (function(modules) { // webpackBootstrap
   !*** ./src/actions/repos/option/branches/option/index.ts ***!
   \***********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("\nif (options.repos) {\n    if (options.branches) {\n        open(options.branches.html_url);\n    }\n    else {\n        notify(\"Branch not found\", \"error\", 3000);\n    }\n}\nelse {\n    notify(\"Repo not found\", \"error\", 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/branches/option/index.ts?");
+eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/workerb/workspace/libraries/wb-github/src/actions/repos/option/branches/option/index.ts'\");\n\n//# sourceURL=webpack://main/./src/actions/repos/option/branches/option/index.ts?");
 
 /***/ })
 
