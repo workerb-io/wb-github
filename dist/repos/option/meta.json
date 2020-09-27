@@ -1,0 +1,35 @@
+{
+    "name": "repos option",
+    "scripts": [
+        {
+            "name": "PRs",
+            "file": "PRs",
+            "type": "folder",
+            "description": "List of pull requests"
+        },
+        {
+            "name": "branches",
+            "file": "branches",
+            "type": "folder",
+            "description": "List of Branches"
+        },
+        {
+            "name": "issues",
+            "file": "issues",
+            "type": "folder",
+            "description": "List of Issues"
+        },
+        {
+            "name": "delete",
+            "file": "delete.js",
+            "type": "action",
+            "description": "Delete the repository"
+        },
+        {
+            "name": "index",
+            "file": "index.js",
+            "type": "action",
+            "description": "index"
+        }
+    ]
+}
