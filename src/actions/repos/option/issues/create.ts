@@ -1,12 +1,12 @@
 if (options.repos) {
-	let repoName: string | null = args[0]
-	if (!repoName) {
-		repoName = prompt('Name for the new repository')
+	let title: string | null = args.join(' ')
+	if (!title) {
+		title = prompt('Enter the title for the issue')
 	}
 	open(options.repos.html_url + '/issues/new')
-	type(args.join(' '), '#issue_title', { method: 'by_query_selector' })
+	type(title, '#issue_title', { method: 'by_query_selector' })
 	click('Submit new issue', { expectReload: true })
-	notify('issue created', 'success', 3000)
+	notify('Issue created', 'success', 3000)
 	reIndex(['github', 'repos', options.repos.name, 'issues'])
 } else {
 	notify('repo not found', 'error', 3000)
