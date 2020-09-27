@@ -20,8 +20,8 @@
             "description": "List of Issues"
         },
         {
-            "name": "delete",
-            "file": "delete.js",
+            "name": "remove",
+            "file": "remove.js",
             "type": "action",
             "description": "Delete the repository"
         },
