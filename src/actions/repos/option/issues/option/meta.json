@@ -1,17 +1,17 @@
 {
-    "name": "pr option",
-    "scripts": [
-        {
-            "name": "close",
-            "file": "close.js",
-            "type": "action",
-            "description": "close"
-        }, 
-        {
-            "name": "index",
-            "file": "index.js",
-            "type": "action",
-            "description": "index"
-        }
-    ]
+	"name": "pr option",
+	"scripts": [
+		{
+			"name": "close",
+			"file": "close.js",
+			"type": "action",
+			"description": "close"
+		},
+		{
+			"name": "index",
+			"file": "index.js",
+			"type": "action",
+			"description": "index"
+		}
+	]
 }

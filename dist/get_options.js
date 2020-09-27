@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar constants_1 = __webpack_require__(/*! ../utils/constants */ \"./src/utils/constants.ts\");\nvar returnOptions = function () {\n    if (!constants_1.accessToken) {\n        return JSON.stringify({\n            remove: [\n                \"repos\",\n                \"search\"\n            ]\n        });\n    }\n    else {\n        return JSON.stringify({\n            remove: [\n                \"setup\"\n            ]\n        });\n    }\n};\nexports.default = returnOptions;\n\n\n//# sourceURL=webpack://main/./src/actions/get_options.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar constants_1 = __webpack_require__(/*! ../utils/constants */ \"./src/utils/constants.ts\");\nvar returnOptions = function () {\n    if (!constants_1.accessToken) {\n        return JSON.stringify({\n            remove: ['repos', 'search'],\n        });\n    }\n    else {\n        return JSON.stringify({\n            remove: ['setup'],\n        });\n    }\n};\nexports.default = returnOptions;\n\n\n//# sourceURL=webpack://main/./src/actions/get_options.ts?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar co
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.accessToken = exports.apiUrl = void 0;\nexports.apiUrl = \"https://api.github.com\";\nexports.accessToken = VARS[\"accessToken\"];\n\n\n//# sourceURL=webpack://main/./src/utils/constants.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.accessToken = exports.apiUrl = void 0;\nexports.apiUrl = 'https://api.github.com';\nexports.accessToken = VARS['accessToken'];\n\n\n//# sourceURL=webpack://main/./src/utils/constants.ts?");
 
 /***/ })
 

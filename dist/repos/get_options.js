@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../utils/constants */ \"./src/utils/constants.ts\");\nvar repoResponse = httpGet(helper_1.getUrl(\"/user/repos?per_page=20&_=\" + new Date().getTime()), {\n    Authorization: \"token \" + constants_1.accessToken\n});\nvar repoApiResponse = helper_1.decodeApiResponse(repoResponse);\nvar repoList = repoApiResponse.response;\nvar returnOptions = function () {\n    switch (repoApiResponse.status) {\n        case 401:\n        case 500:\n        case 403:\n        case 404:\n            notify(repoApiResponse.response.message, \"error\", 3000);\n            return;\n    }\n    return JSON.stringify({\n        add: repoList.map(function (repo) {\n            return {\n                name: repo.name,\n                description: repo.html_url,\n                html_url: repo.html_url,\n                owner: repo.owner\n            };\n        })\n    });\n};\nexports.default = returnOptions;\n\n\n//# sourceURL=webpack://main/./src/actions/repos/get_options.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../utils/constants */ \"./src/utils/constants.ts\");\nvar repoResponse = httpGet(helper_1.getUrl(\"/user/repos?per_page=20&_=\" + new Date().getTime()), {\n    Authorization: 'token ' + constants_1.accessToken,\n});\nvar repoApiResponse = helper_1.decodeApiResponse(repoResponse);\nvar repoList = repoApiResponse.response;\nvar returnOptions = function () {\n    switch (repoApiResponse.status) {\n        case 401:\n        case 500:\n        case 403:\n        case 404:\n            notify(repoApiResponse.response.message, 'error', 3000);\n            return;\n    }\n    return JSON.stringify({\n        add: repoList.map(function (repo) {\n            return {\n                name: repo.name,\n                description: repo.html_url,\n                html_url: repo.html_url,\n                owner: repo.owner,\n            };\n        }),\n    });\n};\nexports.default = returnOptions;\n\n\n//# sourceURL=webpack://main/./src/actions/repos/get_options.ts?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar he
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.accessToken = exports.apiUrl = void 0;\nexports.apiUrl = \"https://api.github.com\";\nexports.accessToken = VARS[\"accessToken\"];\n\n\n//# sourceURL=webpack://main/./src/utils/constants.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.accessToken = exports.apiUrl = void 0;\nexports.apiUrl = 'https://api.github.com';\nexports.accessToken = VARS['accessToken'];\n\n\n//# sourceURL=webpack://main/./src/utils/constants.ts?");
 
 /***/ }),
 
@@ -128,7 +128,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexport
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.decodeApiResponse = exports.getUrl = void 0;\nvar constants_1 = __webpack_require__(/*! ./constants */ \"./src/utils/constants.ts\");\nexports.getUrl = function (endPoint) {\n    return constants_1.apiUrl + endPoint;\n};\nexports.decodeApiResponse = function (result) {\n    if (!result.response) {\n        return {\n            response: {},\n            status: result.status\n        };\n    }\n    return {\n        response: JSON.parse(result.response),\n        status: result.status\n    };\n};\n\n\n//# sourceURL=webpack://main/./src/utils/helper.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.decodeApiResponse = exports.getUrl = void 0;\nvar constants_1 = __webpack_require__(/*! ./constants */ \"./src/utils/constants.ts\");\nexports.getUrl = function (endPoint) {\n    return constants_1.apiUrl + endPoint;\n};\nexports.decodeApiResponse = function (result) {\n    if (!result.response) {\n        return {\n            response: {},\n            status: result.status,\n        };\n    }\n    return {\n        response: JSON.parse(result.response),\n        status: result.status,\n    };\n};\n\n\n//# sourceURL=webpack://main/./src/utils/helper.ts?");
 
 /***/ })
 

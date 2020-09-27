@@ -1,34 +1,32 @@
 {
-    "name": "github",
-    "description": "workerB package for github.com",
-    "sites": [
-        "https://www.github.com"
-    ],
-    "icon": "logo.png",
-    "scripts": [
-        {
-            "name": "repos",
-            "file": "repos",
-            "type": "folder",
-            "description": "List of repositories"
-        },
-        {
-            "name": "search",
-            "file": "search.js",
-            "type": "action",
-            "description": "Search Github"
-        },
-        {
-            "name": "get_options",
-            "file": "get_options.js",
-            "type": "action",
-            "description": "get options"
-        },
-        {
-            "name": "setup",
-            "file": "setup.js",
-            "type": "action",
-            "description": "Setup the Github automation package"
-        }
-    ]
+	"name": "github",
+	"description": "workerB package for github.com",
+	"sites": ["https://www.github.com"],
+	"icon": "logo.png",
+	"scripts": [
+		{
+			"name": "repos",
+			"file": "repos",
+			"type": "folder",
+			"description": "List of repositories"
+		},
+		{
+			"name": "search",
+			"file": "search.js",
+			"type": "action",
+			"description": "Search Github"
+		},
+		{
+			"name": "get_options",
+			"file": "get_options.js",
+			"type": "action",
+			"description": "get options"
+		},
+		{
+			"name": "setup",
+			"file": "setup.js",
+			"type": "action",
+			"description": "Setup the Github automation package"
+		}
+	]
 }
