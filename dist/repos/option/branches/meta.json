@@ -15,10 +15,10 @@
             "description": "list options"
         }, 
         {
-            "name": "index",
-            "file": "index.js",
+            "name": "open",
+            "file": "open.js",
             "type": "action",
-            "description": "index"
+            "description": "Open all branches"
         }   
     ]
 }
