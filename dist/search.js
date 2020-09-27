@@ -91,44 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/PRs/get_options.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/search.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repos/option/PRs/get_options.ts":
-/*!*****************************************************!*\
-  !*** ./src/actions/repos/option/PRs/get_options.ts ***!
-  \*****************************************************/
+/***/ "./src/actions/search.ts":
+/*!*******************************!*\
+  !*** ./src/actions/search.ts ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../../../utils/constants */ \"./src/utils/constants.ts\");\nvar pullsList = [];\nif (options.repos) {\n    var repoResponse = httpGet(helper_1.getUrl(\"/repos/\" + options.repos.owner.login + \"/\" + options.repos.name + \"/pulls?per_page=20&_=\" + new Date().getTime()), {\n        Authorization: 'token ' + constants_1.accessToken,\n    });\n    pullsList = helper_1.decodeApiResponse(repoResponse).response;\n}\nexports.default = (function () {\n    return JSON.stringify({\n        add: pullsList.map(function (pull) {\n            return {\n                name: '#' + pull.number,\n                description: pull.title + '(' + pull.state + ')',\n                html_url: pull.html_url,\n                user: pull.user,\n            };\n        }),\n    });\n});\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/PRs/get_options.ts?");
-
-/***/ }),
-
-/***/ "./src/utils/constants.ts":
-/*!********************************!*\
-  !*** ./src/utils/constants.ts ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.accessToken = exports.apiUrl = void 0;\nexports.apiUrl = 'https://api.github.com';\nexports.accessToken = VARS['accessToken'];\n\n\n//# sourceURL=webpack://main/./src/utils/constants.ts?");
-
-/***/ }),
-
-/***/ "./src/utils/helper.ts":
-/*!*****************************!*\
-  !*** ./src/utils/helper.ts ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.decodeApiResponse = exports.getUrl = void 0;\nvar constants_1 = __webpack_require__(/*! ./constants */ \"./src/utils/constants.ts\");\nexports.getUrl = function (endPoint) {\n    return constants_1.apiUrl + endPoint;\n};\nexports.decodeApiResponse = function (result) {\n    if (!result.response) {\n        return {\n            response: {},\n            status: result.status,\n        };\n    }\n    return {\n        response: JSON.parse(result.response),\n        status: result.status,\n    };\n};\n\n\n//# sourceURL=webpack://main/./src/utils/helper.ts?");
+eval("\nvar searchTerm = args[0];\nif (!searchTerm) {\n    searchTerm = prompt('What do you want to search for?');\n}\nif (searchTerm.length > 0) {\n    open('https://github.com/search?q=' + searchTerm);\n}\nelse {\n    open('https://github.com/search');\n}\n\n\n//# sourceURL=webpack://main/./src/actions/search.ts?");
 
 /***/ })
 

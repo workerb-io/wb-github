@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/PRs/get_options.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/remove.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repos/option/PRs/get_options.ts":
-/*!*****************************************************!*\
-  !*** ./src/actions/repos/option/PRs/get_options.ts ***!
-  \*****************************************************/
+/***/ "./src/actions/repos/option/remove.ts":
+/*!********************************************!*\
+  !*** ./src/actions/repos/option/remove.ts ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../../../utils/constants */ \"./src/utils/constants.ts\");\nvar pullsList = [];\nif (options.repos) {\n    var repoResponse = httpGet(helper_1.getUrl(\"/repos/\" + options.repos.owner.login + \"/\" + options.repos.name + \"/pulls?per_page=20&_=\" + new Date().getTime()), {\n        Authorization: 'token ' + constants_1.accessToken,\n    });\n    pullsList = helper_1.decodeApiResponse(repoResponse).response;\n}\nexports.default = (function () {\n    return JSON.stringify({\n        add: pullsList.map(function (pull) {\n            return {\n                name: '#' + pull.number,\n                description: pull.title + '(' + pull.state + ')',\n                html_url: pull.html_url,\n                user: pull.user,\n            };\n        }),\n    });\n});\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/PRs/get_options.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar helper_1 = __webpack_require__(/*! ../../../utils/helper */ \"./src/utils/helper.ts\");\nvar constants_1 = __webpack_require__(/*! ../../../utils/constants */ \"./src/utils/constants.ts\");\nif (options.repos) {\n    var userResponse = httpGet(helper_1.getUrl('/user'), {\n        Authorization: 'token ' + constants_1.accessToken,\n    });\n    var user = helper_1.decodeApiResponse(userResponse).response;\n    var deleteRawResponse = httpDelete(helper_1.getUrl('/repos/' + user.login + '/' + options.repos.name), null, {\n        Authorization: 'token ' + constants_1.accessToken,\n    });\n    var deleteResponse = helper_1.decodeApiResponse(deleteRawResponse);\n    switch (deleteResponse.status) {\n        case 204:\n            notify('repository deleted', 'success', 3000);\n            reIndex(['github', 'repos']);\n            break;\n        case 403:\n        case 404:\n            notify(deleteResponse.response.message, 'error', 3000);\n            break;\n    }\n}\nelse {\n    notify('Repo not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/remove.ts?");
 
 /***/ }),
 
