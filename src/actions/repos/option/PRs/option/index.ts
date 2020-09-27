@@ -1,4 +1,4 @@
-if (options.repo) {
+if (options.repos) {
     if (options.PRs) {
         open(options.PRs.html_url)
     } else {

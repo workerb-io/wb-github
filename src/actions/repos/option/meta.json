@@ -11,13 +11,13 @@
             "name": "branches",
             "file": "branches",
             "type": "folder",
-            "description": "List of Branches"
+            "description": "List of branches"
         },
         {
             "name": "issues",
             "file": "issues",
             "type": "folder",
-            "description": "List of Issues"
+            "description": "List of issues"
         },
         {
             "name": "remove",

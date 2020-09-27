@@ -1,4 +1,4 @@
-if (options.repo) {
+if (options.repos) {
     if (args[0]) {
         open(options.repos.html_url + "/pulls?q=" + args[0])
     } else {

@@ -1,4 +1,4 @@
-if (options.repo) {
+if (options.repos) {
     open(options.repos.html_url + "/issues/new")
     type(args.join(" "), '#issue_title', {method: 'by_query_selector'})
     click("Submit new issue", { expectReload: true })

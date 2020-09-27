@@ -1,7 +1,7 @@
 import { getUrl, decodeApiResponse } from "../../../utils/helper"
 import { accessToken } from '../../../utils/constants'
 
-if (options.repo) {
+if (options.repos) {
     var userResponse = httpGet(getUrl("/user"), {
         Authorization: "token " + accessToken
     })
