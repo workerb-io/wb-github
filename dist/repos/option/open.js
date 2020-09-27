@@ -91,19 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/index.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/open.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repos/index.ts":
-/*!************************************!*\
-  !*** ./src/actions/repos/index.ts ***!
-  \************************************/
+/***/ "./src/actions/repos/option/open.ts":
+/*!******************************************!*\
+  !*** ./src/actions/repos/option/open.ts ***!
+  \******************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/workerb/workspace/libraries/wb-github/src/actions/repos/index.ts'\");\n\n//# sourceURL=webpack://main/./src/actions/repos/index.ts?");
+"use strict";
+eval("\nif (options.repos) {\n    open(options.repos.html_url);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/open.ts?");
 
 /***/ })
 

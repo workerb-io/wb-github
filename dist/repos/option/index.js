@@ -101,10 +101,9 @@ return /******/ (function(modules) { // webpackBootstrap
   !*** ./src/actions/repos/option/index.ts ***!
   \*******************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("\nif (options.repos) {\n    open(options.repos.html_url);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/index.ts?");
+eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/workerb/workspace/libraries/wb-github/src/actions/repos/option/index.ts'\");\n\n//# sourceURL=webpack://main/./src/actions/repos/option/index.ts?");
 
 /***/ })
 

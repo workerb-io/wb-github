@@ -26,8 +26,8 @@
             "description": "Delete the repository"
         },
         {
-            "name": "index",
-            "file": "index.js",
+            "name": "open",
+            "file": "open.js",
             "type": "action",
             "description": "index"
         }
