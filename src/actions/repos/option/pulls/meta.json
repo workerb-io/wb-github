@@ -18,12 +18,6 @@
 			"file": "open.js",
 			"type": "action",
 			"description": "Open all pull requests"
-		},
-		{
-			"name": "search",
-			"file": "search.js",
-			"type": "action",
-			"description": "Search pull requests"
 		}
 	]
 }
