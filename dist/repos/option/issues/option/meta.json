@@ -8,12 +8,6 @@
 			"description": "Close the issue"
 		},
 		{
-			"name": "comment",
-			"file": "comment.js",
-			"type": "action",
-			"description": "Comment on the issue"
-		},
-		{
 			"name": "view",
 			"file": "view.js",
 			"type": "action",
