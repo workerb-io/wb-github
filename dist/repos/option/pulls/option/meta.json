@@ -5,19 +5,19 @@
 			"name": "merge",
 			"file": "merge.js",
 			"type": "action",
-			"description": "merge"
+			"description": "Merge the pull request"
 		},
 		{
 			"name": "close",
 			"file": "close.js",
 			"type": "action",
-			"description": "close"
+			"description": "Close the pull request"
 		},
 		{
-			"name": "index",
-			"file": "index.js",
+			"name": "open",
+			"file": "open.js",
 			"type": "action",
-			"description": "index"
+			"description": "Open the pull request"
 		}
 	]
 }

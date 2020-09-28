@@ -19,7 +19,7 @@ export default () => {
 		add: pullsList.map(function (pull: any) {
 			return {
 				name: '#' + pull.number,
-				description: pull.title + '(' + pull.state + ')',
+				description: pull.title + ' (' + pull.state + ')',
 				html_url: pull.html_url,
 				user: pull.user,
 			}

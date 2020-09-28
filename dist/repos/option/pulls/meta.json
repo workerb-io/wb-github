@@ -29,7 +29,7 @@
 			"name": "search",
 			"file": "search.js",
 			"type": "action",
-			"description": "Search for a pull requests"
+			"description": "Search pull requests"
 		}
 	]
 }
