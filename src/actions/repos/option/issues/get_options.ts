@@ -18,7 +18,7 @@ export default () => {
 	return JSON.stringify({
 		add: issuesList.map(function (issue) {
 			return {
-				name: issue.title,
+				name: '[Issue] ' + issue.title,
 				description: 'Reported by ' + issue.user.login,
 				html_url: issue.html_url,
 			}
