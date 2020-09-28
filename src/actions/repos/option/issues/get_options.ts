@@ -11,7 +11,7 @@ if (options.repos) {
 			Authorization: 'token ' + accessToken,
 		}
 	)
-	issuesList = decodeApiResponse(issuesResponse).response
+	issuesList = decodeApiResponse(issuesResponse).response.filter((issue: any) => !issue.pull_request)
 }
 
 export default () => {
