@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repos) {\n    var searchTerm_1 = args.join(' ');\n    if (!searchTerm_1) {\n        searchTerm_1 = prompt('What do you want to search for?');\n    }\n    if (searchTerm_1) {\n        open(options.repos.html_url + '/pulls?q=' + searchTerm_1);\n    }\n}\nelse {\n    notify('Repositorynot found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/pulls/search.ts?");
+eval("\nif (options.repos) {\n    var searchTerm_1 = args.join(' ');\n    if (!searchTerm_1) {\n        searchTerm_1 = prompt('What do you want to search for?');\n    }\n    if (searchTerm_1) {\n        open(options.repos.html_url + '/pulls?q=' + searchTerm_1);\n    }\n}\nelse {\n    notify('Repository not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/pulls/search.ts?");
 
 /***/ })
 

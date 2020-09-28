@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repos) {\n    if (options.branches) {\n        open(options.branches.html_url);\n    }\n    else {\n        notify('Branch not found', 'error', 3000);\n    }\n}\nelse {\n    notify('Repositorynot found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/branches/option/open.ts?");
+eval("\nif (options.repos) {\n    if (options.branches) {\n        open(options.branches.html_url);\n    }\n    else {\n        notify('Branch not found', 'error', 3000);\n    }\n}\nelse {\n    notify('Repository not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/branches/option/open.ts?");
 
 /***/ })
 

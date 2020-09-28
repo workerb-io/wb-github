@@ -5,5 +5,5 @@ if (options.repos) {
 		notify('Branch not found', 'error', 3000)
 	}
 } else {
-	notify('Repositorynot found', 'error', 3000)
+	notify('Repository not found', 'error', 3000)
 }

@@ -9,5 +9,5 @@ if (options.repos) {
 		open(options.repos.html_url + '/pulls?q=' + searchTerm)
 	}
 } else {
-	notify('Repositorynot found', 'error', 3000)
+	notify('Repository not found', 'error', 3000)
 }
