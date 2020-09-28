@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.issues) {\n    var comment = args.join(' ');\n    if (!comment) {\n        comment = prompt('Enter the comment');\n    }\n    if (comment) {\n        open(options.issues.html_url);\n        type(comment, '#new_comment_field', { method: 'by_query_selector' });\n        click('Comment');\n        notify('Comment added to the issue', 'success', 3000);\n        reIndex(['github', 'repos', options.repos.name, 'issues']);\n    }\n}\nelse {\n    notify('Issue not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/option/comment.ts?");
+eval("\nif (options.issues) {\n    var comment = args.join(' ');\n    if (!comment) {\n        comment = prompt('Enter the comment');\n    }\n    if (comment) {\n        open(options.issues.html_url);\n        type(comment, 'Leave a comment', { method: 'by_placeholder' });\n        click('Comment');\n        notify('Comment added to the issue', 'success', 3000);\n        reIndex(['github', 'repos', options.repos.name, 'issues']);\n    }\n}\nelse {\n    notify('Issue not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/option/comment.ts?");
 
 /***/ })
 
