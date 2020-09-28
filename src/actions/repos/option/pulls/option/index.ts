@@ -1,6 +1,6 @@
 if (options.repos) {
-	if (options.PRs) {
-		open(options.PRs.html_url)
+	if (options.pulls) {
+		open(options.pulls.html_url)
 	} else {
 		notify('PR not found', 'error', 3000)
 	}

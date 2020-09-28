@@ -2,8 +2,8 @@
 	"name": "repos option",
 	"scripts": [
 		{
-			"name": "PRs",
-			"file": "PRs",
+			"name": "pulls",
+			"file": "pulls",
 			"type": "folder",
 			"description": "List of pull requests"
 		},

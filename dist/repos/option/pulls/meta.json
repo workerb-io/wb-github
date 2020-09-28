@@ -20,10 +20,16 @@
 			"description": "options"
 		},
 		{
-			"name": "index",
-			"file": "index.js",
+			"name": "open",
+			"file": "open.js",
 			"type": "action",
-			"description": "index"
+			"description": "Open all pull requests"
+		},
+		{
+			"name": "search",
+			"file": "search.js",
+			"type": "action",
+			"description": "Search for a pull requests"
 		}
 	]
 }

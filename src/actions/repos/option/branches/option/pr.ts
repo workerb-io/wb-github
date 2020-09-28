@@ -6,8 +6,8 @@ if (options.repos) {
 		var descriptionText = description.join('\n')
 		type(descriptionText, '#pull_request_body', { method: 'by_query_selector' })
 		submit()
-		notify('Pull request created.', 'success', 3000)
-		reIndex(['github', 'repos', options.repos.name, 'PRs'])
+		notify('Pull request created', 'success', 3000)
+		reIndex(['github', 'repos', options.repos.name, 'pulls'])
 	} else {
 		notify('Branch not found', 'error', 3000)
 	}

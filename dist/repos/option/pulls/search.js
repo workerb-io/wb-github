@@ -91,20 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/branches/option/pr.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/pulls/search.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repos/option/branches/option/pr.ts":
-/*!********************************************************!*\
-  !*** ./src/actions/repos/option/branches/option/pr.ts ***!
-  \********************************************************/
+/***/ "./src/actions/repos/option/pulls/search.ts":
+/*!**************************************************!*\
+  !*** ./src/actions/repos/option/pulls/search.ts ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repos) {\n    if (options.branches) {\n        open(options.branches.html_url);\n        open(options.repos.html_url + '/compare/master...' + options.branches.name + '?expand=1');\n        var description = readAll('.commit-message');\n        var descriptionText = description.join('\\n');\n        type(descriptionText, '#pull_request_body', { method: 'by_query_selector' });\n        submit();\n        notify('Pull request created', 'success', 3000);\n        reIndex(['github', 'repos', options.repos.name, 'pulls']);\n    }\n    else {\n        notify('Branch not found', 'error', 3000);\n    }\n}\nelse {\n    notify('Repository not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/branches/option/pr.ts?");
+eval("\nif (options.repos) {\n    var searchTerm_1 = args.join(' ');\n    if (!searchTerm_1) {\n        searchTerm_1 = prompt('What do you want to search for?');\n    }\n    if (searchTerm_1) {\n        open(options.repos.html_url + '/pulls?q=' + searchTerm_1);\n    }\n}\nelse {\n    notify('Repo not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/pulls/search.ts?");
 
 /***/ })
 
