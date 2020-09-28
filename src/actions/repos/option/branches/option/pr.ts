@@ -5,7 +5,7 @@ if (options.repos) {
 		var description = readAll('.commit-message')
 		var descriptionText = description.join('\n')
 		type(descriptionText, '#pull_request_body', { method: 'by_query_selector' })
-		click('Create pull request')
+		submit()
 		notify('Pull request created.', 'success', 3000)
 		reIndex(['github', 'repos', options.repos.name, 'PRs'])
 	} else {
