@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repos) {\n    open(options.repos.html_url + '/pulls');\n}\nelse {\n    notify('Repo not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/pulls/open.ts?");
+eval("\nif (options.repos) {\n    open(options.repos.html_url + '/pulls');\n}\nelse {\n    notify('Repositorynot found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/pulls/open.ts?");
 
 /***/ })
 

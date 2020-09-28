@@ -8,5 +8,5 @@ if (options.repos) {
 	notify('pull request created', 'success', 3000)
 	reIndex(['github', 'repos', options.repos.name, 'pulls'])
 } else {
-	notify('repo not found', 'error', 3000)
+	notify('Repositorynot found', 'error', 3000)
 }

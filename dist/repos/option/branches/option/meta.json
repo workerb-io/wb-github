@@ -11,7 +11,7 @@
 			"name": "pr",
 			"file": "pr.js",
 			"type": "action",
-			"description": "Create a PR"
+			"description": "Create a pull request"
 		}
 	]
 }

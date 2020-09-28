@@ -2,12 +2,6 @@
 	"name": "pr option",
 	"scripts": [
 		{
-			"name": "create",
-			"file": "create.js",
-			"type": "action",
-			"description": "Create a new pull request"
-		},
-		{
 			"name": "option",
 			"file": "option",
 			"type": "folder",

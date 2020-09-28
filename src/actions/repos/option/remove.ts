@@ -25,5 +25,5 @@ if (options.repos) {
 			break
 	}
 } else {
-	notify('Repo not found', 'error', 3000)
+	notify('Repositorynot found', 'error', 3000)
 }

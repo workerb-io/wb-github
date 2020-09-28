@@ -14,8 +14,8 @@
 			"description": "Close the pull request"
 		},
 		{
-			"name": "open",
-			"file": "open.js",
+			"name": "view",
+			"file": "view.js",
 			"type": "action",
 			"description": "Open the pull request"
 		}

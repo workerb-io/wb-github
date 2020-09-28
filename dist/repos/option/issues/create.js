@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nif (options.repos) {\n    var title = args.join(' ');\n    if (!title) {\n        title = prompt('Enter the title for the issue');\n    }\n    open(options.repos.html_url + '/issues/new');\n    type(title, '#issue_title', { method: 'by_query_selector' });\n    click('Submit new issue', { expectReload: true });\n    notify('Issue created', 'success', 3000);\n    reIndex(['github', 'repos', options.repos.name, 'issues']);\n}\nelse {\n    notify('repo not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/create.ts?");
+eval("\nif (options.repos) {\n    var title = args.join(' ');\n    if (!title) {\n        title = prompt('Enter the title for the issue');\n    }\n    open(options.repos.html_url + '/issues/new');\n    type(title, '#issue_title', { method: 'by_query_selector' });\n    click('Submit new issue', { expectReload: true });\n    notify('Issue created', 'success', 3000);\n    reIndex(['github', 'repos', options.repos.name, 'issues']);\n}\nelse {\n    notify('Repositorynot found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/create.ts?");
 
 /***/ })
 

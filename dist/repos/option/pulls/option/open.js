@@ -101,10 +101,9 @@ return /******/ (function(modules) { // webpackBootstrap
   !*** ./src/actions/repos/option/pulls/option/open.ts ***!
   \*******************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("\nif (options.repos) {\n    if (options.pulls) {\n        open(options.pulls.html_url);\n    }\n    else {\n        notify('PR not found', 'error', 3000);\n    }\n}\nelse {\n    notify('Repo not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/pulls/option/open.ts?");
+eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/workerb/workspace/packages/wb-github/src/actions/repos/option/pulls/option/open.ts'\");\n\n//# sourceURL=webpack://main/./src/actions/repos/option/pulls/option/open.ts?");
 
 /***/ })
 
