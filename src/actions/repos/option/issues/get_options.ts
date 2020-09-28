@@ -19,9 +19,9 @@ export default () => {
 		add: issuesList.map(function (issue) {
 			return {
 				name: issue.title,
-				description: 'Reported by ' + issue.user,
+				description: 'Reported by ' + issue.user.login,
 				html_url: issue.html_url,
-				user: issue.user,
+				user: issue.user.login,
 			}
 		}),
 	})
