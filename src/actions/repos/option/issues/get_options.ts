@@ -21,7 +21,6 @@ export default () => {
 				name: issue.title,
 				description: 'Reported by ' + issue.user.login,
 				html_url: issue.html_url,
-				user: issue.user.login,
 			}
 		}),
 	})
