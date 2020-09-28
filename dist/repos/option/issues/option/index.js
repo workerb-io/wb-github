@@ -101,10 +101,9 @@ return /******/ (function(modules) { // webpackBootstrap
   !*** ./src/actions/repos/option/issues/option/index.ts ***!
   \*********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("\nif (options.repos) {\n    if (options.issues) {\n        open(options.issues.html_url);\n    }\n    else if (args[0]) {\n        open(options.repos.html_url + '/issues?q=' + args[0]);\n    }\n    else {\n        open(options.repos.html_url + '/issues');\n    }\n}\nelse {\n    notify('Repository not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/option/index.ts?");
+eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/workerb/workspace/packages/wb-github/src/actions/repos/option/issues/option/index.ts'\");\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/option/index.ts?");
 
 /***/ })
 

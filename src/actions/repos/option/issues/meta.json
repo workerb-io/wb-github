@@ -2,10 +2,22 @@
 	"name": "pr option",
 	"scripts": [
 		{
-			"name": "create",
-			"file": "create.js",
+			"name": "new",
+			"file": "new.js",
 			"type": "action",
-			"description": "create issues"
+			"description": "Create a new issue"
+		},
+		{
+			"name": "search",
+			"file": "search.js",
+			"type": "action",
+			"description": "Search all issues"
+		},
+		{
+			"name": "open",
+			"file": "open.js",
+			"type": "action",
+			"description": "Open all issues"
 		},
 		{
 			"name": "option",

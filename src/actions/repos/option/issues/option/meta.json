@@ -5,13 +5,13 @@
 			"name": "close",
 			"file": "close.js",
 			"type": "action",
-			"description": "close"
+			"description": "Close the issue"
 		},
 		{
-			"name": "index",
-			"file": "index.js",
+			"name": "view",
+			"file": "view.js",
 			"type": "action",
-			"description": "index"
+			"description": "View the issue"
 		}
 	]
 }

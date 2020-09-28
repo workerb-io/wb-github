@@ -101,10 +101,9 @@ return /******/ (function(modules) { // webpackBootstrap
   !*** ./src/actions/repos/option/issues/create.ts ***!
   \***************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("\nif (options.repos) {\n    var title = args.join(' ');\n    if (!title) {\n        title = prompt('Enter the title for the issue');\n    }\n    open(options.repos.html_url + '/issues/new');\n    type(title, '#issue_title', { method: 'by_query_selector' });\n    click('Submit new issue', { expectReload: true });\n    notify('Issue created', 'success', 3000);\n    reIndex(['github', 'repos', options.repos.name, 'issues']);\n}\nelse {\n    notify('Repository not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/create.ts?");
+eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/workerb/workspace/packages/wb-github/src/actions/repos/option/issues/create.ts'\");\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/create.ts?");
 
 /***/ })
 
