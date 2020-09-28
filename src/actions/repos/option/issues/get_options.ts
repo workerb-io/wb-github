@@ -16,12 +16,12 @@ if (options.repos) {
 
 export default () => {
 	return JSON.stringify({
-		add: issuesList.map(function (pull) {
+		add: issuesList.map(function (issue) {
 			return {
-				name: '#' + pull.number,
-				description: pull.title + '(' + pull.state + ')',
-				html_url: pull.html_url,
-				user: pull.user,
+				name: issue.title,
+				description: 'Reported by ' + issue.user,
+				html_url: issue.html_url,
+				user: issue.user,
 			}
 		}),
 	})
