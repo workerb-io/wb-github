@@ -2,12 +2,6 @@
 	"name": "pr option",
 	"scripts": [
 		{
-			"name": "create",
-			"file": "create.js",
-			"type": "action",
-			"description": "Create a new pull request"
-		},
-		{
 			"name": "option",
 			"file": "option",
 			"type": "folder",
@@ -20,10 +14,10 @@
 			"description": "options"
 		},
 		{
-			"name": "index",
-			"file": "index.js",
+			"name": "open",
+			"file": "open.js",
 			"type": "action",
-			"description": "index"
+			"description": "Open all pull requests"
 		}
 	]
 }

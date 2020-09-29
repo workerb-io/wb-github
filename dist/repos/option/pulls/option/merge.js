@@ -91,19 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/issues/create.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/pulls/option/merge.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repos/option/issues/create.ts":
-/*!***************************************************!*\
-  !*** ./src/actions/repos/option/issues/create.ts ***!
-  \***************************************************/
+/***/ "./src/actions/repos/option/pulls/option/merge.ts":
+/*!********************************************************!*\
+  !*** ./src/actions/repos/option/pulls/option/merge.ts ***!
+  \********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/workerb/workspace/packages/wb-github/src/actions/repos/option/issues/create.ts'\");\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/create.ts?");
+"use strict";
+eval("\nif (options.pulls) {\n    open(options.pulls.html_url);\n    click('Merge pull request');\n    click('Confirm merge');\n    notify('Pull request merged', 'success', 3000);\n    reIndex(['github', 'repos', options.repos.name]);\n    reIndex(['github', 'repos', options.repos.name, 'pulls']);\n}\nelse {\n    notify('Pull request not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/pulls/option/merge.ts?");
 
 /***/ })
 

@@ -91,19 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/issues/create.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/issues/option/comment.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repos/option/issues/create.ts":
-/*!***************************************************!*\
-  !*** ./src/actions/repos/option/issues/create.ts ***!
-  \***************************************************/
+/***/ "./src/actions/repos/option/issues/option/comment.ts":
+/*!***********************************************************!*\
+  !*** ./src/actions/repos/option/issues/option/comment.ts ***!
+  \***********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/workerb/workspace/packages/wb-github/src/actions/repos/option/issues/create.ts'\");\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/create.ts?");
+"use strict";
+eval("\nif (options.issues) {\n    var comment = args.join(' ');\n    if (!comment) {\n        comment = prompt('Enter the comment');\n    }\n    if (comment) {\n        open(options.issues.html_url);\n        type(comment, '#new_comment_field', { method: 'by_query_selector' });\n        click('Comment');\n        notify('Comment added to the issue', 'success', 3000);\n        reIndex(['github', 'repos', options.repos.name, 'issues']);\n    }\n}\nelse {\n    notify('Issue not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/option/comment.ts?");
 
 /***/ })
 

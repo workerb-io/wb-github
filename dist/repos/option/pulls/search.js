@@ -91,19 +91,20 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/issues/create.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/actions/repos/option/pulls/search.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/actions/repos/option/issues/create.ts":
-/*!***************************************************!*\
-  !*** ./src/actions/repos/option/issues/create.ts ***!
-  \***************************************************/
+/***/ "./src/actions/repos/option/pulls/search.ts":
+/*!**************************************************!*\
+  !*** ./src/actions/repos/option/pulls/search.ts ***!
+  \**************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/ts-loader/index.js):\\nError: ENOENT: no such file or directory, open '/Users/workerb/workspace/packages/wb-github/src/actions/repos/option/issues/create.ts'\");\n\n//# sourceURL=webpack://main/./src/actions/repos/option/issues/create.ts?");
+"use strict";
+eval("\nif (options.repos) {\n    var searchTerm_1 = args.join(' ');\n    if (!searchTerm_1) {\n        searchTerm_1 = prompt('What do you want to search for?');\n    }\n    if (searchTerm_1) {\n        open(options.repos.html_url + '/pulls?q=' + searchTerm_1);\n    }\n}\nelse {\n    notify('Repository not found', 'error', 3000);\n}\n\n\n//# sourceURL=webpack://main/./src/actions/repos/option/pulls/search.ts?");
 
 /***/ })
 

@@ -18,8 +18,8 @@ export default () => {
 	return JSON.stringify({
 		add: pullsList.map(function (pull: any) {
 			return {
-				name: '#' + pull.number,
-				description: pull.title + '(' + pull.state + ')',
+				name: pull.title,
+				description: pull.description,
 				html_url: pull.html_url,
 				user: pull.user,
 			}
