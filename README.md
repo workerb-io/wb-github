@@ -34,4 +34,4 @@
 
 ## Support
 
--   [Forums](http://forums.workerb.io/)
+-   [support@workerb.io](mailto:support@workerb.io)
