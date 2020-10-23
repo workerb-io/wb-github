@@ -1,28 +1,9 @@
-let tokenName = 'workerB'
-
 open('https://github.com/settings/tokens')
 
 const currentUrl = readURL()
 
 if (currentUrl.indexOf('login') === -1) {
-	const allTokenNames = readAll('span.token-description a')
-	const previousWorkerbTokens = []
-
-	for (const token of allTokenNames) {
-		if (token.toLowerCase().indexOf(tokenName) !== -1) {
-			previousWorkerbTokens.push(token.trim())
-		}
-	}
-
-	let workerbToken = !previousWorkerbTokens.length
-		? ''
-		: previousWorkerbTokens.sort()[previousWorkerbTokens.length - 1]
-
-	tokenName = workerbToken
-		? workerbToken.trim().slice(-1) === parseInt(workerbToken.trim().slice(-1), 10).toString()
-			? `${workerbToken.trim().slice(0, -1)}${Number(workerbToken.trim().slice(-1)) + 1}`
-			: `${workerbToken.trim()}1`
-		: tokenName
+	const tokenName = `workerb-${new Date().getTime()}`
 
 	click('Generate new token', {
 		method: 'by_text',
