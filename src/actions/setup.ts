@@ -19,6 +19,7 @@ if (currentUrl.indexOf('login') === -1) {
 
 	click('Generate token', {
 		method: 'by_text',
+		expectReload: false,
 	})
 
 	let newAuthToken = read('#new-oauth-token', {
