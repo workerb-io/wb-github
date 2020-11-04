@@ -29,7 +29,7 @@ if (currentUrl.indexOf('login') === -1) {
 	if (!newAuthToken) {
 		notify("Access token can't be empty", 'error', 3000)
 	} else {
-		setVar('github', [
+		setVars([
 			{
 				name: 'accessToken',
 				value: newAuthToken,
