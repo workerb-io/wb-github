@@ -34,7 +34,7 @@ if (currentUrl.indexOf('login') === -1) {
 				name: 'accessToken',
 				value: newAuthToken,
 			},
-		])
+		], { local: true })
 		notify('Access token added successfully', 'success', 3000)
 		reIndex()
 	}
