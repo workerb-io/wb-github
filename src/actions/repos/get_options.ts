@@ -22,7 +22,7 @@ const returnOptions = () => {
 		add: repoList.map((repo: any) => {
 			return {
 				name: repo.name,
-				description: repo.html_url,
+				description: repo.description,
 				html_url: repo.html_url,
 				owner: repo.owner,
 			}
