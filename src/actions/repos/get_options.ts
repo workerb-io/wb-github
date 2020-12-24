@@ -1,12 +1,25 @@
 import { getUrl, decodeApiResponse } from '../../utils/helper'
 import { accessToken } from '../../utils/constants'
 
-var repoResponse = httpGet(getUrl(`/user/repos?_=${new Date().getTime()}`), {
-	Authorization: 'token ' + accessToken,
-})
+var repoResponse: any;
+var repoList: any = [];
+var repoApiResponse: any;
+var num = 1;
 
-var repoApiResponse = decodeApiResponse(repoResponse)
-var repoList = repoApiResponse.response
+do {
+	repoResponse = httpGet(getUrl(`/user/repos?per_page=100&page=${num}&_=${new Date().getTime()}`), {
+		Authorization: 'token ' + accessToken,
+	})
+
+	repoApiResponse = decodeApiResponse(repoResponse)
+
+	if (!Object.keys(repoApiResponse.response).length)
+		repoList.push(...repoApiResponse.response);
+
+
+	num++;
+
+} while (Object.keys(repoApiResponse.response).length)
 
 const returnOptions = () => {
 	switch (repoApiResponse.status) {
