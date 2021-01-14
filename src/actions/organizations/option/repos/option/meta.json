@@ -1,0 +1,12 @@
+{
+	"name": "repos",
+	"description": "organization repos cheatsheet",
+	"scripts": [
+		{
+			"name": "open",
+			"file": "open.js",
+			"type": "action",
+			"description": "open organization repo"
+		}
+	]
+}
