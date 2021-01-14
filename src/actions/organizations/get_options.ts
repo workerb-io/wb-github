@@ -6,7 +6,10 @@ let userResponse = httpGet(getUrl('/user'), {
 });
 
 let user = decodeApiResponse(userResponse).response;
-user.login = 'defunkt'
+/**
+ * use the below user login to test organizations
+ */
+// user.login = 'defunkt'
 
 let organizationResponse = httpGet(getUrl(`/users/${user.login}/orgs?per_page=20&_=${new Date().getTime()}`), {
 	Authorization: 'token ' + accessToken,
