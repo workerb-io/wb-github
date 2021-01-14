@@ -1,25 +1,30 @@
 {
-	  "name": "github package update",
-	  "description": "automate all the github tasks",
-	  "scripts": [{
-	  "name": "get_options",
-	  "file": "get_options.js",
-	  "type": "action",
-	  "description": "Get initial options"
-	},{
-	  "name": "search",
-	  "file": "search.js",
-	  "type": "action",
-	  "description": "Search Github"
-	},{
-	  "name": "setup",
-	  "file": "setup.js",
-	  "type": "action",
-	  "description": "Setup the Github automation package"
-	},{
-	  "name": "orgs",
-	  "file": "orgs",
-	  "type": "folder",
-	  "description": "List all the organizations"
-	}]
-	}
+	"name": "github package update",
+	"description": "automate all the github tasks",
+	"scripts": [
+		{
+			"name": "get_options",
+			"file": "get_options.js",
+			"type": "action",
+			"description": "Get initial options"
+		},
+		{
+			"name": "search",
+			"file": "search.js",
+			"type": "action",
+			"description": "Search Github"
+		},
+		{
+			"name": "setup",
+			"file": "setup.js",
+			"type": "action",
+			"description": "Setup the Github automation package"
+		},
+		{
+			"name": "orgs",
+			"file": "orgs",
+			"type": "folder",
+			"description": "List all the organizations"
+		}
+	]
+}
