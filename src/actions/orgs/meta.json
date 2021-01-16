@@ -1,12 +1,12 @@
 {
-	"name": "repos",
-	"description": "repos cheatsheet",
+	"name": "organization",
+	"description": "organization cheatsheet",
 	"scripts": [
 		{
 			"name": "option",
 			"file": "option",
 			"type": "folder",
-			"description": "actions for selected repo"
+			"description": "actions for selected organization"
 		},
 		{
 			"name": "get_options",

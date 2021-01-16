@@ -1,35 +1,42 @@
 {
-	  "name": "option",
-	  "description": "List all the branches of a repo",
-	  "scripts": [{
-	  "name": "get_options",
-	  "file": "get_options.js",
-	  "type": "action",
-	  "description": ""
-	},{
-	  "name": "open",
-	  "file": "open.js",
-	  "type": "action",
-	  "description": "Open organization repo"
-	},{
-	  "name": "remove",
-	  "file": "remove.js",
-	  "type": "action",
-	  "description": "Delete the repository"
-	},{
-	  "name": "branches",
-	  "file": "branches",
-	  "type": "folder",
-	  "description": "List all the branches of a repo"
-	},{
-	  "name": "issues",
-	  "file": "issues",
-	  "type": "folder",
-	  "description": "List all the issues of the repo"
-	},{
-	  "name": "pulls",
-	  "file": "pulls",
-	  "type": "folder",
-	  "description": "List all the pull requests of the repo"
-	}]
-	}
+	"name": "option",
+	"description": "List all the branches of a repo",
+	"scripts": [
+		{
+			"name": "get_options",
+			"file": "get_options.js",
+			"type": "action",
+			"description": ""
+		},
+		{
+			"name": "open",
+			"file": "open.js",
+			"type": "action",
+			"description": "Open organization repo"
+		},
+		{
+			"name": "remove",
+			"file": "remove.js",
+			"type": "action",
+			"description": "Delete the repository"
+		},
+		{
+			"name": "branches",
+			"file": "branches",
+			"type": "folder",
+			"description": "List all the branches of a repo"
+		},
+		{
+			"name": "issues",
+			"file": "issues",
+			"type": "folder",
+			"description": "List all the issues of the repo"
+		},
+		{
+			"name": "pulls",
+			"file": "pulls",
+			"type": "folder",
+			"description": "List all the pull requests of the repo"
+		}
+	]
+}

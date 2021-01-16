@@ -1,15 +1,17 @@
 {
-	  "name": "option",
-	  "description": "",
-	  "scripts": [{
-	  "name": "open",
-	  "file": "open.js",
-	  "type": "action",
-	  "description": "Open the Organization"
-	},{
-	  "name": "repos",
-	  "file": "repos",
-	  "type": "folder",
-	  "description": "List all the repos"
-	}]
-	}
+	"name": "organization option",
+	"scripts": [
+		{
+			"name": "open",
+			"file": "open.js",
+			"type": "action",
+			"description": "Open the Organization"
+		},
+		{
+			"name": "repos",
+			"file": "repos",
+			"type": "folder",
+			"description": "repos for selected organization"
+		}
+	]
+}

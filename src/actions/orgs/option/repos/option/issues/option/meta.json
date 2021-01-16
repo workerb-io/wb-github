@@ -1,6 +1,5 @@
 {
-	"name": "option",
-	"description": "",
+	"name": "pr option",
 	"scripts": [
 		{
 			"name": "close",
