@@ -1,4 +1,3 @@
-// @description Open the Organization
 import { getUrl, decodeApiResponse } from '../../../utils/helper'
 import { accessToken } from '../../../utils/constants'
 
