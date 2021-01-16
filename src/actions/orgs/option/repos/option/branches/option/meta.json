@@ -1,6 +1,5 @@
 {
-	"name": "option",
-	"description": "",
+	"name": "repos option",
 	"scripts": [
 		{
 			"name": "open",

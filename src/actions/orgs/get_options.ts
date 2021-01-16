@@ -1,4 +1,3 @@
-// @description List users/ and its organizations
 import { getUrl, decodeApiResponse } from '../../utils/helper'
 import { accessToken } from '../../utils/constants'
 

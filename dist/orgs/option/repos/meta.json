@@ -1,20 +1,24 @@
 {
-	  "name": "repos",
-	  "description": "List all the repos",
-	  "scripts": [{
-	  "name": "get_options",
-	  "file": "get_options.js",
-	  "type": "action",
-	  "description": "list organization/user repos"
-	},{
-	  "name": "new",
-	  "file": "new.js",
-	  "type": "action",
-	  "description": "Create a new repository"
-	},{
-	  "name": "option",
-	  "file": "option",
-	  "type": "folder",
-	  "description": ""
-	}]
-	}
+	"name": "repos",
+	"description": "List all the repos",
+	"scripts": [
+		{
+			"name": "get_options",
+			"file": "get_options.js",
+			"type": "action",
+			"description": "list organization/user repos"
+		},
+		{
+			"name": "new",
+			"file": "new.js",
+			"type": "action",
+			"description": "Create a new repository"
+		},
+		{
+			"name": "option",
+			"file": "option",
+			"type": "folder",
+			"description": ""
+		}
+	]
+}
