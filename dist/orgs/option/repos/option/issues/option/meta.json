@@ -1,0 +1,23 @@
+{
+	"name": "pr option",
+	"scripts": [
+		{
+			"name": "close",
+			"file": "close.js",
+			"type": "action",
+			"description": "Close the issue"
+		},
+		{
+			"name": "comment",
+			"file": "comment.js",
+			"type": "action",
+			"description": "Comment on the issue"
+		},
+		{
+			"name": "view",
+			"file": "view.js",
+			"type": "action",
+			"description": "View the issue"
+		}
+	]
+}

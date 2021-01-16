@@ -6,10 +6,11 @@ let userResponse = httpGet(getUrl('/user'), {
 });
 
 let user = decodeApiResponse(userResponse).response;
+log(userResponse);
 /**
  * use the below user login to test organizations
  */
-// user.login = 'defunkt'
+// user.login = 'defunkt';
 
 let organizationResponse = httpGet(getUrl(`/users/${user.login}/orgs?per_page=20&_=${new Date().getTime()}`), {
 	Authorization: 'token ' + accessToken,
@@ -27,6 +28,8 @@ const returnOptions = () => {
 			return
 	}
 
+	organizationList.unshift(user);
+
 	return JSON.stringify({
 		add: organizationList.map((org: any) => {
 			return {
@@ -36,6 +39,7 @@ const returnOptions = () => {
 				description: org.description,
 				avatar_url: org.avatar_url,
 				repos_url: org.repos_url,
+				type: org.type,
 				url: org.url
 			}
 		})

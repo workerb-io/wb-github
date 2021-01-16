@@ -7,14 +7,8 @@
 	"icon": "https://raw.githubusercontent.com/workerb-io/wb-github/master/src/actions/logo.png",
 	"scripts": [
 		{
-			"name": "repos",
-			"file": "repos",
-			"type": "folder",
-			"description": "List of repositories"
-		},
-		{
-			"name": "organizations",
-			"file": "organizations",
+			"name": "orgs",
+			"file": "orgs",
 			"type": "folder",
 			"description": "List of organizations"
 		},

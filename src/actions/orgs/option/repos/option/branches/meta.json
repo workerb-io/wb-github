@@ -1,6 +1,6 @@
 {
-	"name": "repos",
-	"description": "repos cheatsheet",
+	"name": "branches",
+	"description": "branches cheatsheet",
 	"scripts": [
 		{
 			"name": "option",
@@ -13,6 +13,12 @@
 			"file": "get_options.js",
 			"type": "action",
 			"description": "list options"
+		},
+		{
+			"name": "open",
+			"file": "open.js",
+			"type": "action",
+			"description": "Open all branches"
 		}
 	]
 }

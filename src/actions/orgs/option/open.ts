@@ -1,8 +1,8 @@
 import { getUrl, decodeApiResponse } from '../../../utils/helper'
 import { accessToken } from '../../../utils/constants'
 
-if (options.organizations) {
-	let organizationDetailResponse = httpGet(`${options.organizations.url}?_=${new Date().getTime()}`, {
+if (options.orgs) {
+	let organizationDetailResponse = httpGet(`${options.orgs.url}?_=${new Date().getTime()}`, {
 		Authorization: 'token ' + accessToken,
 	});
 
