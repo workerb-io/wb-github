@@ -5,7 +5,7 @@ if (options.repos) {
 	type(descriptionText, '#pull_request_body', { method: 'by_query_selector' })
 	click('Create pull request', {})
 	notify('Pull request created', 'success', 3000)
-	reIndex(['github', 'repos', options.repos.name, 'pulls'])
+	reIndex(['repos', options.repos.name, 'pulls'])
 } else {
 	notify('Repository not found', 'error', 3000)
 }

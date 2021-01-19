@@ -18,7 +18,7 @@ export default () => {
 			repo.issues_url = repo.issues_url.split("{")[0];
 			repo.pulls_url = repo.pulls_url.split("{")[0];
 			return {
-				name: repo.full_name, // doubt (remove.js accordingly update)
+				name: repo.name, // doubt (remove.js accordingly update)
 				repo_name: repo.name,
 				id: repo.id,
 				html_url: repo.html_url,

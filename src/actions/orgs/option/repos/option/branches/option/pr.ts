@@ -8,7 +8,7 @@ if (options.repos) {
 		//@ts-ignore
 		submit()
 		notify('Pull request created', 'success', 3000)
-		reIndex(['github', 'repos', options.repos.name, 'pulls'])
+		reIndex(['repos', options.repos.name, 'pulls'])
 	} else {
 		notify('Branch not found', 'error', 3000)
 	}

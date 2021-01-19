@@ -7,7 +7,7 @@ if (options.repos) {
 	type(title, '#issue_title', { method: 'by_query_selector' })
 	click('Submit new issue', { expectReload: true })
 	notify('Issue created', 'success', 3000)
-	reIndex(['github', 'repos', options.repos.name, 'issues'])
+	reIndex(['repos', options.repos.name, 'issues'])
 } else {
 	notify('Repository not found', 'error', 3000)
 }

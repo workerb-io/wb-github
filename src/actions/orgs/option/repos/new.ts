@@ -28,6 +28,6 @@ click('Create repository', {
 	expectReload: true,
 })
 notify('Repository created', 'success', 3000)
-reIndex(['github', 'repos'])
+reIndex(['repos'])
 
 // Abstract knowledge -> Inflated knowledge -> Smart recommender??
