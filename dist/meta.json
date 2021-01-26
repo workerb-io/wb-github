@@ -1,14 +1,16 @@
 {
 	"name": "github",
 	"description": "workerB package for github.com",
-	"sites": ["https://www.github.com"],
+	"sites": [
+		"https://www.github.com"
+	],
 	"icon": "https://raw.githubusercontent.com/workerb-io/wb-github/master/src/actions/logo.png",
 	"scripts": [
 		{
-			"name": "repos",
-			"file": "repos",
+			"name": "orgs",
+			"file": "orgs",
 			"type": "folder",
-			"description": "List of repositories"
+			"description": "List of organizations"
 		},
 		{
 			"name": "search",
