@@ -63,13 +63,13 @@ module.exports = {
         new WBMetaJsonGenerator({
             package: "github package update",
             packageDescription: "automate all the github tasks",
-            folderDescription: {
-                "/orgs/option/repos/option/branches": "List all the branches of a repo",
-                "/orgs/option/repos/option/issues": "List all the issues of the repo",
-                "/orgs/option/repos/option/pulls": "List all the pull requests of the repo",
-                "/orgs/option/repos": "List all the repos",
-                "/orgs": "List all the organizations"
-            }
+            folderDescriptionList: [
+                {path: "/orgs/option/repos/option/branches", description: "List all the branches of a repo"},
+                {path: "/orgs/option/repos/option/issues", description: "List all the issues of the repo"},
+                {path: "/orgs/option/repos/option/pulls", description: "List all the pull requests of the repo"},
+                {path: "/orgs/option/repos", description: "List all the repos"},
+                {path: "/orgs", description: "List all the organizations"}
+            ]
         })
     ],
     optimization: {
