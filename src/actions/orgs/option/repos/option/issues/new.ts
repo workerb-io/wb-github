@@ -1,3 +1,4 @@
+// @description Create a new issue
 if (options.repos) {
 	let title: string | null = args.join(' ')
 	if (!title) {

@@ -1,3 +1,4 @@
+// @description Search in pull requests
 if (options.repos) {
 	let searchTerm: string | null = args.join(' ')
 

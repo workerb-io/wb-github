@@ -1,3 +1,4 @@
+// @description Open the branch
 if (options.repos) {
 	if (options.branches) {
 		open(options.branches.html_url)
