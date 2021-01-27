@@ -1,18 +1,15 @@
 {
-	"name": "organization",
-	"description": "organization cheatsheet",
-	"scripts": [
-		{
-			"name": "option",
-			"file": "option",
-			"type": "folder",
-			"description": "actions for selected organization"
-		},
-		{
-			"name": "get_options",
-			"file": "get_options.js",
-			"type": "action",
-			"description": "list options"
-		}
-	]
-}
+	  "name": "orgs",
+	  "description": "List all the organizations",
+	  "scripts": [{
+	  "name": "get_options",
+	  "file": "get_options.js",
+	  "type": "action",
+	  "description": "List users/ and its organizations"
+	},{
+	  "name": "option",
+	  "file": "option",
+	  "type": "folder",
+	  "description": ""
+	}]
+	}
