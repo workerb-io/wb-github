@@ -1,0 +1,17 @@
+{
+	"name": "repos option",
+	"scripts": [
+		{
+			"name": "open",
+			"file": "open.js",
+			"type": "action",
+			"description": "Open the branch"
+		},
+		{
+			"name": "pr",
+			"file": "pr.js",
+			"type": "action",
+			"description": "Create a pull request"
+		}
+	]
+}
