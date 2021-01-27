@@ -1,3 +1,4 @@
+// @description Get initial options
 import { accessToken } from '../utils/constants'
 
 const returnOptions = () => {

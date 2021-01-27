@@ -1,3 +1,4 @@
+// @description Comment on the issue
 if (options.issues) {
 	let comment: string | null = args.join(' ')
 	if (!comment) {

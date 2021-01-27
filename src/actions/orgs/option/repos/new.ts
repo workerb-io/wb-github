@@ -1,3 +1,4 @@
+// @description Create a new repository
 open('https://github.com/new')
 
 const organisationName = args[1]

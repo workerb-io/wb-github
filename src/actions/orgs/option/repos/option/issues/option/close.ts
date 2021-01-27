@@ -1,3 +1,4 @@
+// @description Close the issue
 if (options.issues) {
 	open(options.issues.html_url)
 	click('Close issue')

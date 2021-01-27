@@ -1,3 +1,4 @@
+// @description View the issue
 if (options.repos) {
 	if (options.issues) {
 		open(options.issues.html_url)
