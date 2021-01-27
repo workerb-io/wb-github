@@ -4,7 +4,7 @@ import { accessToken } from '../utils/constants'
 const returnOptions = () => {
 	if (!accessToken) {
 		return JSON.stringify({
-			remove: ['repos', 'search'],
+			remove: ['search', 'orgs'],
 		})
 	} else {
 		return JSON.stringify({

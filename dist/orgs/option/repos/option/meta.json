@@ -1,0 +1,42 @@
+{
+	"name": "repos",
+	"description": "organization repos cheatsheet",
+	"scripts": [
+		{
+			"name": "open",
+			"file": "open.js",
+			"type": "action",
+			"description": "open organization repo"
+		},
+		{
+			"name": "branches",
+			"file": "branches",
+			"type": "folder",
+			"description": "List of branches"
+		},
+		{
+			"name": "issues",
+			"file": "issues",
+			"type": "folder",
+			"description": "List of issues"
+		},
+		{
+			"name": "pulls",
+			"file": "pulls",
+			"type": "folder",
+			"description": "List of pull requests"
+		},
+		{
+			"name": "remove",
+			"file": "remove.js",
+			"type": "action",
+			"description": "Delete the repository"
+		},
+		{
+			"name": "get_options",
+			"file": "get_options.js",
+			"type": "action",
+			"description": "list organization/user repos further actions"
+		}
+	]
+}
