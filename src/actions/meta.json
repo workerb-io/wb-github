@@ -13,12 +13,6 @@
 			"description": "List of organizations"
 		},
 		{
-			"name": "organizations",
-			"file": "organizations",
-			"type": "folder",
-			"description": "List of organizations"
-		},
-		{
 			"name": "search",
 			"file": "search.js",
 			"type": "action",
