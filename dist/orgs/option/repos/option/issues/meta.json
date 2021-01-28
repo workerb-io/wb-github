@@ -1,36 +1,30 @@
 {
-	"name": "issues",
-	"description": "List all the issues of the repo",
-	"scripts": [
-		{
-			"name": "get_options",
-			"file": "get_options.js",
-			"type": "action",
-			"description": "List issues"
-		},
-		{
-			"name": "new",
-			"file": "new.js",
-			"type": "action",
-			"description": "Create a new issue"
-		},
-		{
-			"name": "open",
-			"file": "open.js",
-			"type": "action",
-			"description": "Open all issues"
-		},
-		{
-			"name": "search",
-			"file": "search.js",
-			"type": "action",
-			"description": "Search issues"
-		},
-		{
-			"name": "option",
-			"file": "option",
-			"type": "folder",
-			"description": ""
-		}
-	]
-}
+	  "name": "issues",
+	  "description": "List all the issues of the repo",
+	  "scripts": [{
+	  "name": "get_options",
+	  "file": "get_options.js",
+	  "type": "action",
+	  "description": "List issues"
+	},{
+	  "name": "new",
+	  "file": "new.js",
+	  "type": "action",
+	  "description": "Create a new issue"
+	},{
+	  "name": "open",
+	  "file": "open.js",
+	  "type": "action",
+	  "description": "Open all issues"
+	},{
+	  "name": "search",
+	  "file": "search.js",
+	  "type": "action",
+	  "description": "Search issues"
+	},{
+	  "name": "option",
+	  "file": "option",
+	  "type": "folder",
+	  "description": ""
+	}]
+	}
