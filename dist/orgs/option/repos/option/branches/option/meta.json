@@ -1,18 +1,15 @@
 {
-	"name": "option",
-	"description": "",
-	"scripts": [
-		{
-			"name": "open",
-			"file": "open.js",
-			"type": "action",
-			"description": "Open the branch"
-		},
-		{
-			"name": "pr",
-			"file": "pr.js",
-			"type": "action",
-			"description": "Create a pull request"
-		}
-	]
-}
+	  "name": "option",
+	  "description": "",
+	  "scripts": [{
+	  "name": "open",
+	  "file": "open.js",
+	  "type": "action",
+	  "description": "Open the branch"
+	},{
+	  "name": "pr",
+	  "file": "pr.js",
+	  "type": "action",
+	  "description": "Create a pull request"
+	}]
+	}
