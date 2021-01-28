@@ -1,14 +1,10 @@
-// @description list options for a branch
 import { decodeApiResponse, getUrl } from '../../../../../../utils/helper'
 import { accessToken } from '../../../../../../utils/constants'
 
 let branchesList: any[] = []
 
 if (options.repos) {
-	var branchResponse = httpGet(
-		getUrl(
-			`/repos/${options.repos.owner.login}/${options.repos.name}/branches?per_page=20&_=${new Date().getTime()}`
-		),
+	let branchResponse = httpGet(`${options.repos.branches_url}?per_page=20&_=${new Date().getTime()}`,
 		{
 			Authorization: 'token ' + accessToken,
 		}
