@@ -9,25 +9,23 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const fileSystem = helpers.generateFS(__dirname + '/src/actions', "workerB")
 
-const entryFiles = helpers.generateEntryPaths(fileSystem.children)
+const entryFiles = helpers.generateEntryPaths(fileSystem.children);
 
-const entryPaths = helpers.getFiles(entryFiles, ".ts").map(file => file.replace('.ts', ''))
+const mode = process.argv.filter(val => val.includes("--mode"));
+let environment = "production";
+if(mode.length > 0 && mode[0].includes("dev")) {
+  environment = "development";
+}
 
-// const metaFiles = helpers.getFiles(entryFiles, ".json")
+const entryPaths = helpers.getFiles(entryFiles, ".ts").map(file => file.replace('.ts', ''));
 
-// let copyPatterns = metaFiles.map(
-//     (metaFile) => ({ from: './src/actions/' + metaFile, to: './' + metaFile })
-// )
-
-// const rootJSON = fs.readFileSync("./src/actions/meta.json", 'utf8')
-// const rootJSONParsed = rootJSON ? JSON.parse(rootJSON) : {}
-
-// let iconPath = ""
-
-// if (rootJSONParsed.icon) {
-//     iconPath = path.join("./src/actions", rootJSONParsed.icon)
-//     copyPatterns.concat({ from: iconPath, to: './' })
-// }
+const folderDescriptionList = [
+    {path: "/orgs/option/repos/option/branches", description: "List all the branches of a repo"},
+    {path: "/orgs/option/repos/option/issues", description: "List all the issues of the repo"},
+    {path: "/orgs/option/repos/option/pulls", description: "List all the pull requests of the repo"},
+    {path: "/orgs/option/repos", description: "List all the repos"},
+    {path: "/orgs", description: "List all the organizations"}
+]
 
 module.exports = {
     entry: entryPaths.reduce((result, entryPath) => {
@@ -61,15 +59,10 @@ module.exports = {
     },
     plugins: [
         new WBMetaJsonGenerator({
+            environment,
             package: "github package update",
             packageDescription: "automate all the github tasks",
-            folderDescriptionList: [
-                {path: "/orgs/option/repos/option/branches", description: "List all the branches of a repo"},
-                {path: "/orgs/option/repos/option/issues", description: "List all the issues of the repo"},
-                {path: "/orgs/option/repos/option/pulls", description: "List all the pull requests of the repo"},
-                {path: "/orgs/option/repos", description: "List all the repos"},
-                {path: "/orgs", description: "List all the organizations"}
-            ]
+            folderDescriptionList
         })
     ],
     optimization: {
