@@ -18,7 +18,7 @@ jobs:
       - name: Yarn Build
         run: yarn build
       - name: Dist
-        run: zip dist dist/
+        run: zip -r dist dist/
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
