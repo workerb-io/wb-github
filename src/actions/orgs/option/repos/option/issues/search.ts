@@ -1,3 +1,4 @@
+// @description Search issues
 if (options.repos) {
 	let searchTerm: string | null = args.join(' ')
 

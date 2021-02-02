@@ -1,3 +1,4 @@
+// @description Open all pull requests
 if (options.repos) {
 	open(options.repos.html_url + '/pulls')
 } else {

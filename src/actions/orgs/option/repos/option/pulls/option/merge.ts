@@ -1,3 +1,4 @@
+// @description Merge the pull request
 if (options.pulls) {
 	open(options.pulls.html_url)
 	click('Merge pull request')

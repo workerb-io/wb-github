@@ -1,3 +1,4 @@
+// @description Setup the Github automation package
 open('https://github.com/settings/tokens')
 
 const currentUrl = readURL()

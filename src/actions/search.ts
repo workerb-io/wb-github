@@ -1,3 +1,4 @@
+// @description Search Github
 let searchTerm: string | null = args[0]
 
 if (!searchTerm) {

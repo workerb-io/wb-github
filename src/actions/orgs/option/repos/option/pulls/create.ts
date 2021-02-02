@@ -1,3 +1,4 @@
+// @description Create a pull request
 if (options.repos) {
 	open(options.repos.html_url + '/compare/' + args[1] + '...' + args[0] + '?expand=1')
 	var description = readAll('.commit-message')
