@@ -1,36 +1,30 @@
 {
-	"name": "pulls",
-	"description": "List all the pull requests of the repo",
-	"scripts": [
-		{
-			"name": "create",
-			"file": "create.js",
-			"type": "action",
-			"description": "Create a pull request"
-		},
-		{
-			"name": "get_options",
-			"file": "get_options.js",
-			"type": "action",
-			"description": "List options for a pull request"
-		},
-		{
-			"name": "open",
-			"file": "open.js",
-			"type": "action",
-			"description": "Open all pull requests"
-		},
-		{
-			"name": "search",
-			"file": "search.js",
-			"type": "action",
-			"description": "Search in pull requests"
-		},
-		{
-			"name": "option",
-			"file": "option",
-			"type": "folder",
-			"description": ""
-		}
-	]
-}
+	  "name": "pulls",
+	  "description": "List all the pull requests of the repo",
+	  "scripts": [{
+	  "name": "create",
+	  "file": "create.js",
+	  "type": "action",
+	  "description": "Create a pull request"
+	},{
+	  "name": "get_options",
+	  "file": "get_options.js",
+	  "type": "action",
+	  "description": "List options for a pull request"
+	},{
+	  "name": "open",
+	  "file": "open.js",
+	  "type": "action",
+	  "description": "Open all pull requests"
+	},{
+	  "name": "search",
+	  "file": "search.js",
+	  "type": "action",
+	  "description": "Search in pull requests"
+	},{
+	  "name": "option",
+	  "file": "option",
+	  "type": "folder",
+	  "description": ""
+	}]
+	}

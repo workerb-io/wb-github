@@ -1,6 +1,6 @@
 {
 	  "name": "option",
-	  "description": "List all the branches of a repo",
+	  "description": "",
 	  "scripts": [{
 	  "name": "get_options",
 	  "file": "get_options.js",
