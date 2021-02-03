@@ -5,7 +5,7 @@
 	  "name": "open",
 	  "file": "open.js",
 	  "type": "action",
-	  "description": "Open the Organization"
+	  "description": "Open Organization/User profile"
 	},{
 	  "name": "repos",
 	  "file": "repos",

@@ -1,5 +1,5 @@
 // @description list organization/user repos
-import { getUrl, decodeApiResponse } from '../../../../utils/helper'
+import { decodeApiResponse } from '../../../../utils/helper'
 import { accessToken } from '../../../../utils/constants'
 
 let organizationRepoList: any[] = []
@@ -19,14 +19,14 @@ export default () => {
 			repo.issues_url = repo.issues_url.split("{")[0];
 			repo.pulls_url = repo.pulls_url.split("{")[0];
 			return {
-				name: repo.name, // doubt (remove.js accordingly update)
+				name: repo.name,
 				repo_name: repo.name,
 				id: repo.id,
 				html_url: repo.html_url,
 				issues_url: repo.issues_url,
 				pulls_url: repo.pulls_url,
 				branches_url: repo.branches_url,
-				description: repo.description,
+				description: repo.description ? repo.description : repo.html_url,
 				owner: repo.owner
 			}
 		}),
