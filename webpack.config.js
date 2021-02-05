@@ -60,8 +60,8 @@ module.exports = {
     plugins: [
         new WBMetaJsonGenerator({
             environment,
-            package: "github package update",
-            packageDescription: "automate all the github tasks",
+            package: "Github",
+            packageDescription: "workerB package for github.com",
             folderDescriptionList
         })
     ],
