@@ -1,5 +1,5 @@
 // @description list organization/user repos
-import { getUrl, decodeApiResponse } from '../../../../utils/helper'
+import { decodeApiResponse } from '../../../../utils/helper'
 import { accessToken } from '../../../../utils/constants'
 
 let organizationRepoList: any[] = []

@@ -62,6 +62,10 @@ module.exports = {
             environment,
             package: "Github",
             packageDescription: "workerB package for github.com",
+            packageIcon: "https://raw.githubusercontent.com/workerb-io/wb-github/master/src/actions/logo.png",
+            sites: [
+                "https://www.github.com"
+            ],
             folderDescriptionList
         })
     ],
