@@ -1,5 +1,5 @@
 // @description List options for a pull request
-import { decodeApiResponse, getUrl } from '../../../../../../utils/helper'
+import { decodeApiResponse } from '../../../../../../utils/helper'
 import { accessToken } from '../../../../../../utils/constants'
 
 let pullsList: any[] = []
