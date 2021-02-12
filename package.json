@@ -1,7 +1,7 @@
 {
 	"name": "wb-github",
 	"version": "1.0.0",
-	"description": "github package for workerB",
+	"description": "workerB package for github.com",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "webpack --mode=production",
@@ -15,14 +15,13 @@
 		"babel-core": "^6.26.3",
 		"babel-preset-env": "^1.7.0",
 		"copy-webpack-plugin": "^6.0.2",
-		"meta-json-generator": "workerb-io/meta-json-generator",
 		"ts-loader": "^7.0.5",
 		"typescript": "^4.1.3",
 		"uglifyjs-webpack-plugin": "^2.2.0",
+		"wb-packager-webpack-plugin": "^1.0.0",
 		"webpack": "^4.43.0",
 		"webpack-cli": "^3.3.11",
 		"webpack-dev-server": "^3.11.0"
 	},
-	"dependencies": {
-	}
+	"dependencies": {}
 }

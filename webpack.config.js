@@ -4,7 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const fs = require('fs');
 const helpers = require('./webpack.helpers.js');
-const WBMetaJsonGenerator = require("meta-json-generator");
+const WBMetaJsonGenerator = require("wb-packager-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 const fileSystem = helpers.generateFS(__dirname + '/src/actions', "workerB")
@@ -63,6 +63,7 @@ module.exports = {
             package: "Github",
             packageDescription: "workerB package for github.com",
             packageIcon: "https://raw.githubusercontent.com/workerb-io/wb-github/master/src/actions/logo.png",
+            folderIcon: "https://raw.githubusercontent.com/workerb-io/wb-github/master/src/actions/logo.png",
             sites: [
                 "https://www.github.com"
             ],
