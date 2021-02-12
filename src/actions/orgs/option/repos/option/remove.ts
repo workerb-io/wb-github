@@ -1,8 +1,11 @@
 // @description Delete the repository
 import { getUrl, decodeApiResponse } from '../../../../../utils/helper'
-import { accessToken } from '../../../../../utils/constants'
+import { accessToken, ORGS, REPOS } from '../../../../../utils/constants'
 
-if (options.repos) {
+if (options.orgs && options.repos) {
+
+	const organisationName: string = options.orgs.name;
+
 	var userResponse = httpGet(getUrl('/user'), {
 		Authorization: 'token ' + accessToken
 	})
@@ -17,8 +20,8 @@ if (options.repos) {
 
 	switch (deleteResponse.status) {
 		case 204:
-			notify('Repository deleted', 'success', 3000)
-			reIndex(['repos'])
+			notify('Repository deleted', 'success', 3000);
+			reIndex([ORGS, organisationName, REPOS]);
 			break
 		case 403:
 		case 404:
