@@ -36,7 +36,7 @@ const returnOptions = () => {
 				name: org.login,
 				login: org.login,
 				id: org.id,
-				description: org.description && org.description.length > 0 ? org.description : org.url,
+				description: org.description ? org.description : org.html_url,
 				avatar_url: org.avatar_url,
 				repos_url: org.repos_url,
 				type: org.type,
