@@ -17,7 +17,7 @@ jobs:
         run: zip -r dist dist/
       - name: Get current date
         run: |
-          VERSION=$(expr $(date +'%y') - 20)$(date +'.%j.%H%M')
+          VERSION=$(expr $(date +'%y') - 20)$(date +'.%m.%d.%H%M')
           echo "TAG_NAME=$VERSION" >> $GITHUB_ENV
           echo "RELEASE_NAME=$VERSION" >> $GITHUB_ENV
       - name: Create Release
