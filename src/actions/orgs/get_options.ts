@@ -7,7 +7,6 @@ let userResponse = httpGet(getUrl('/user'), {
 });
 
 let user = decodeApiResponse(userResponse).response;
-log(userResponse);
 /**
  * use the below user login to test organizations
  */
@@ -37,7 +36,7 @@ const returnOptions = () => {
 				name: org.login,
 				login: org.login,
 				id: org.id,
-				description: org.description,
+				description: org.description && org.description.length > 0 ? org.description : org.url,
 				avatar_url: org.avatar_url,
 				repos_url: org.repos_url,
 				type: org.type,
