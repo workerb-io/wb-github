@@ -1,0 +1,16 @@
+{
+		"name": "option",
+		"description": "",
+		"icon": "https://raw.githubusercontent.com/workerb-io/wb-github/master/src/actions/logo.png",
+		"scripts": [{
+	  "name": "open",
+	  "file": "open.js",
+	  "type": "action",
+	  "description": "Open the branch"
+	},{
+	  "name": "pr",
+	  "file": "pr.js",
+	  "type": "action",
+	  "description": "Create a pull request"
+	}]
+	}

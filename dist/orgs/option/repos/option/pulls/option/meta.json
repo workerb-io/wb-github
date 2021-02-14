@@ -1,0 +1,21 @@
+{
+		"name": "option",
+		"description": "",
+		"icon": "https://raw.githubusercontent.com/workerb-io/wb-github/master/src/actions/logo.png",
+		"scripts": [{
+	  "name": "close",
+	  "file": "close.js",
+	  "type": "action",
+	  "description": "Close the pull request"
+	},{
+	  "name": "merge",
+	  "file": "merge.js",
+	  "type": "action",
+	  "description": "Merge the pull request"
+	},{
+	  "name": "view",
+	  "file": "view.js",
+	  "type": "action",
+	  "description": "View the pull request"
+	}]
+	}
