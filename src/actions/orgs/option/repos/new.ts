@@ -34,5 +34,3 @@ click('Create repository', {
 })
 notify('Repository created', 'success', 3000);
 reIndex([ORGS, organisationName, REPOS]);
-
-// Abstract knowledge -> Inflated knowledge -> Smart recommender??
