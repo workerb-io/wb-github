@@ -62,7 +62,7 @@ module.exports = {
             environment,
             package: "Github",
             packageDescription: "workerB package for github.com",
-            packageIcon: "src/action/package_logo.png",
+            packageIcon: "/src/actions/package_logo.png",
             readmeFile: "README.md",
             sites: [
                 "https://www.github.com"
