@@ -22,14 +22,17 @@ const entryPaths = helpers.getFiles(entryFiles, ".ts").map(file => file.replace(
 const folderDescriptionList = [
     {
         path: "/orgs/option/repos/option/branches", 
+        iconPath: "/src/actions/orgs/option/repos/option/branches/branch_logo.png",
         description: "List all the branches of a repo"
     },
     {
         path: "/orgs/option/repos/option/issues", 
+        iconPath: "/src/actions/orgs/option/repos/option/issues/issue_logo.png",
         description: "List all the issues of the repo"
     },
     {
         path: "/orgs/option/repos/option/pulls", 
+        iconPath: "/src/actions/orgs/option/repos/option/pulls/pull_logo.png",
         description: "List all the pull requests of the repo"
     },
     {
@@ -39,6 +42,7 @@ const folderDescriptionList = [
     },
     {
         path: "/orgs", 
+        iconPath: "/src/actions/orgs/org_logo.png",
         description: "List all the organizations"
     }
 ]
