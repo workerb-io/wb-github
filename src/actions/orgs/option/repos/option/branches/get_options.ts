@@ -19,7 +19,7 @@ export default () => {
 		add: branchesList.map(function (branch: any) {
 			return {
 				name: branch.name,
-				description: branch.commit.sha,
+				description: branch.commit.url,
 				html_url: `${options.repos.html_url}/commit/` + branch.commit.sha,
 			}
 		}),
