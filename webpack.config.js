@@ -20,11 +20,27 @@ if(mode.length > 0 && mode[0].includes("dev")) {
 const entryPaths = helpers.getFiles(entryFiles, ".ts").map(file => file.replace('.ts', ''));
 
 const folderDescriptionList = [
-    {path: "/orgs/option/repos/option/branches", description: "List all the branches of a repo"},
-    {path: "/orgs/option/repos/option/issues", description: "List all the issues of the repo"},
-    {path: "/orgs/option/repos/option/pulls", description: "List all the pull requests of the repo"},
-    {path: "/orgs/option/repos", description: "List all the repos"},
-    {path: "/orgs", description: "List all the organizations"}
+    {
+        path: "/orgs/option/repos/option/branches", 
+        description: "List all the branches of a repo"
+    },
+    {
+        path: "/orgs/option/repos/option/issues", 
+        description: "List all the issues of the repo"
+    },
+    {
+        path: "/orgs/option/repos/option/pulls", 
+        description: "List all the pull requests of the repo"
+    },
+    {
+        path: "/orgs/option/repos", 
+        iconPath: "/src/actions/orgs/option/repos/repo_logo.svg",
+        description: "List all the repos"
+    },
+    {
+        path: "/orgs", 
+        description: "List all the organizations"
+    }
 ]
 
 module.exports = {
