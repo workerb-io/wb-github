@@ -34,7 +34,7 @@ const folderDescriptionList = [
     },
     {
         path: "/orgs/option/repos", 
-        iconPath: "/src/actions/orgs/option/repos/repo_logo.svg",
+        iconPath: "/src/actions/orgs/option/repos/repo_logo.png",
         description: "List all the repos"
     },
     {
