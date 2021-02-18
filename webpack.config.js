@@ -22,27 +22,27 @@ const entryPaths = helpers.getFiles(entryFiles, ".ts").map(file => file.replace(
 const folderDescriptionList = [
     {
         path: "/orgs/option/repos/option/branches", 
-        iconPath: "/src/actions/orgs/option/repos/option/branches/branch_logo.png",
+        iconPath: "src/actions/orgs/option/repos/option/branches/branch_logo.png",
         description: "List all the branches of a repo"
     },
     {
         path: "/orgs/option/repos/option/issues", 
-        iconPath: "/src/actions/orgs/option/repos/option/issues/issue_logo.png",
+        iconPath: "src/actions/orgs/option/repos/option/issues/issue_logo.png",
         description: "List all the issues of the repo"
     },
     {
         path: "/orgs/option/repos/option/pulls", 
-        iconPath: "/src/actions/orgs/option/repos/option/pulls/pull_logo.png",
+        iconPath: "src/actions/orgs/option/repos/option/pulls/pull_logo.png",
         description: "List all the pull requests of the repo"
     },
     {
         path: "/orgs/option/repos", 
-        iconPath: "/src/actions/orgs/option/repos/repo_logo.png",
+        iconPath: "src/actions/orgs/option/repos/repo_logo.png",
         description: "List all the repos"
     },
     {
         path: "/orgs", 
-        iconPath: "/src/actions/orgs/org_logo.png",
+        iconPath: "src/actions/orgs/org_logo.png",
         description: "List all the organizations"
     }
 ]
@@ -82,7 +82,7 @@ module.exports = {
             environment,
             package: "Github",
             packageDescription: "workerB package for github.com",
-            packageIcon: "/src/actions/package_logo.png",
+            packageIcon: "src/actions/package_logo.png",
             readmeFile: "README.md",
             sites: [
                 "https://www.github.com"
