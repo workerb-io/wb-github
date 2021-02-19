@@ -1,7 +1,25 @@
 // @description Setup the Github automation package
 open('https://github.com/settings/tokens')
 
-const currentUrl = readURL()
+const currentUrl = readURL();
+
+const USER_PERMISSION_ENTITIES: Array<string> = [
+	'repo',
+	'workflow',
+	'write:packages',
+	'delete:packages',
+	'admin:org',
+	'admin:public_key',
+	'admin:repo_hook',
+	'admin:org_hook',
+	'gist',
+	'notifications',
+	'user',
+	'delete_repo',
+	'write:discussion',
+	'admin:enterprise',
+	'admin:gpg_key'
+]
 
 if (currentUrl.indexOf('login') === -1) {
 	const tokenName = `workerb-${new Date().getTime()}`
@@ -14,9 +32,11 @@ if (currentUrl.indexOf('login') === -1) {
 		method: 'by_query_selector',
 	})
 
-	click('.token-scope input', {
-		method: 'by_query_selector',
-	})
+	USER_PERMISSION_ENTITIES.forEach(entity => {
+		click(`li[data-scope-for='${entity}'] .token-scope input`, {
+			method: "by_query_selector"
+		});
+	});
 
 	click('Generate token', {
 		method: 'by_text',
