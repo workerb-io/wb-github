@@ -7,17 +7,18 @@ let organizationRepoList: any[] = []
 if (options.orgs) {
 	let organizationRepoResponse = httpGet(`${options.orgs.repos_url}?_=${new Date().getTime()}`, {
 		Authorization: 'token ' + accessToken,
-	});
-	let organizationRepoResponseObject = decodeApiResponse(organizationRepoResponse);
-	organizationRepoList = organizationRepoResponseObject.response;
+	})
+	let organizationRepoResponseObject = decodeApiResponse(organizationRepoResponse)
+	organizationRepoList = organizationRepoResponseObject.response
+	log(organizationRepoList)
 }
 
 export default () => {
 	return JSON.stringify({
-		add: organizationRepoList.map(repo => {
-			repo.branches_url = repo.branches_url.split("{")[0];
-			repo.issues_url = repo.issues_url.split("{")[0];
-			repo.pulls_url = repo.pulls_url.split("{")[0];
+		add: organizationRepoList.map((repo) => {
+			repo.branches_url = repo.branches_url.split('{')[0]
+			repo.issues_url = repo.issues_url.split('{')[0]
+			repo.pulls_url = repo.pulls_url.split('{')[0]
 			return {
 				name: repo.name,
 				repo_name: repo.name,
@@ -27,10 +28,10 @@ export default () => {
 				pulls_url: repo.pulls_url,
 				branches_url: repo.branches_url,
 				description: repo.description ? repo.description : repo.html_url,
-				owner: repo.owner
+				owner: repo.owner,
+				url: repo.url,
 			}
 		}),
-		remove: options.orgs ? options.orgs.type === 'User' ? [] : ['new'] : []
-	});
+		remove: options.orgs ? (options.orgs.type === 'User' ? [] : ['new']) : [],
+	})
 }
-
