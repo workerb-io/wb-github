@@ -5,11 +5,9 @@ import { accessToken } from '../../../../../../utils/constants'
 let branchesList: any[] = []
 
 if (options.repos) {
-	let branchResponse = httpGet(`${options.repos.branches_url}?per_page=20&_=${new Date().getTime()}`,
-		{
-			Authorization: 'token ' + accessToken,
-		}
-	)
+	let branchResponse = httpGet(`${options.repos.branches_url}?per_page=20&_=${new Date().getTime()}`, {
+		Authorization: 'token ' + accessToken,
+	})
 
 	branchesList = decodeApiResponse(branchResponse).response
 }

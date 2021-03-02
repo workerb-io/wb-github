@@ -1,4 +1,4 @@
-// @description list options for a branch
+// @description list actions for a repo
 import { decodeApiResponse, getUrl } from '../../../../../../utils/helper'
 import { accessToken } from '../../../../../../utils/constants'
 
@@ -9,7 +9,7 @@ if (options.repos) {
 		Authorization: 'token ' + accessToken,
 	})
 
-	workflowList = decodeApiResponse(workflowResponse).response
+	workflowList = decodeApiResponse(workflowResponse).response.workflows
 }
 
 export default () => {
