@@ -1,4 +1,4 @@
-// @description Open all actions
+// @description Open all workflows
 if (options.repos) {
 	open(options.repos.url + '/actions')
 } else {

@@ -20,8 +20,8 @@ const entryPaths = helpers.getFiles(entryFiles, '.ts').map((file) => file.replac
 
 const folderDescriptionList = [
 	{
-		path: '/orgs/option/repos/option/repo_workflow',
-		iconPath: 'src/actions/orgs/option/repos/option/repo_workflow/repo_workflow_logo.png',
+		path: '/orgs/option/repos/option/workflows',
+		iconPath: 'src/actions/orgs/option/repos/option/workflows/workflows_logo.png',
 		description: 'List all the actions of a repo',
 	},
 	{

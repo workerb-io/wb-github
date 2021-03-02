@@ -1,4 +1,4 @@
-// @description list actions for a repo
+// @description list workflows for a repo
 import { decodeApiResponse, getUrl } from '../../../../../../utils/helper'
 import { accessToken } from '../../../../../../utils/constants'
 
