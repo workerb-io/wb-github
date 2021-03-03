@@ -1,22 +1,27 @@
 // @description Run the workflow
+import { accessToken } from '../../../../../../../utils/constants'
+
 if (options.repos) {
-	log(options)
+	let ref = prompt('Please insert the git ref for this action?')
+	if (!ref) {
+		ref = 'master'
+	}
+
 	if (options.workflows) {
-		const htmlUrl = options.workflows.html_url
-		const splittedUrl = htmlUrl.split('/')
-		const ymlFileName = splittedUrl[splittedUrl.length - 1]
-		// open the currently selected workflow.
-		open(`${options.repos.html_url}/actions/workflows/${ymlFileName}`)
-
-		// click on the run workflow dropdown
-		click('/html/body/div[4]/div/main/div[2]/div/div/div/div[2]/div[5]/div[2]/details/summary', {
-			method: 'by_xpath',
+		const url = `${options.workflows.url}/dispatches`
+		const payload = JSON.stringify({
+			ref: ref,
 		})
+		const header = {
+			Authorization: 'token ' + accessToken,
+		}
+		const response = httpPost(url, payload, header)
 
-		// click on the run workflow item
-		click('/html/body/div[4]/div/main/div[2]/div/div/div/div[2]/div[5]/div[2]/details/div/div/div/form[2]/button', {
-			method: 'by_xpath',
-		})
+		if (response.response === '' && response.status === 204) {
+			notify('Workflow started successfully!', 'success', 3000)
+		} else {
+			notify(JSON.stringify(response), 'error', 3000)
+		}
 	}
 } else {
 	notify('Repository not found', 'error', 3000)
