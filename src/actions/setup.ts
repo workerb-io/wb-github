@@ -57,7 +57,7 @@ if (currentUrl.indexOf('login') === -1) {
 			},
 		], { local: true })
 		notify('Access token added successfully', 'success', 3000)
-		reIndex()
+		reIndex([])
 	}
 } else {
 	notify('Please login into your github account first', 'error', 3000)
