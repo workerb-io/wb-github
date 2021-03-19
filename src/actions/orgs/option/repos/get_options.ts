@@ -10,7 +10,6 @@ if (options.orgs) {
 	})
 	let organizationRepoResponseObject = decodeApiResponse(organizationRepoResponse)
 	organizationRepoList = organizationRepoResponseObject.response
-	log(organizationRepoList)
 }
 
 export default () => {
