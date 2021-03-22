@@ -30,7 +30,6 @@ export default () => {
 				owner: repo.owner,
 				url: repo.url,
 			}
-		}),
-		remove: options.orgs ? (options.orgs.type === 'User' ? [] : ['new']) : [],
+		})
 	})
 }
