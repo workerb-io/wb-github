@@ -85,7 +85,7 @@ module.exports = {
 		new WBMetaJsonGenerator({
 			environment,
 			package: 'Github',
-			packageDescription: 'workerB package for github.com',
+			packageDescription: 'github.com',
 			packageIcon: 'src/actions/package_logo.png',
 			readmeFile: 'README.md',
 			sites: ['https://www.github.com'],
