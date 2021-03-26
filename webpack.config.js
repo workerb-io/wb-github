@@ -23,12 +23,18 @@ const folderDescriptionList = [
 		path: '/orgs/option/repos/option/workflows',
 		iconPath: 'src/actions/orgs/option/repos/option/workflows/workflows_logo.png',
 		description: 'List all the actions of a repo',
+	},
+	{
+		path: '/orgs/option/repos/option/workflows/option',
 		defaultAction: 'open',
 	},
 	{
 		path: '/orgs/option/repos/option/branches',
 		iconPath: 'src/actions/orgs/option/repos/option/branches/branch_logo.png',
 		description: 'List all the branches of a repo',
+	},
+	{
+		path: '/orgs/option/repos/option/branches/option',
 		defaultAction: 'open',
 	},
 	{
@@ -38,22 +44,32 @@ const folderDescriptionList = [
 		defaultAction: 'open',
 	},
 	{
+		path: '/orgs/option/repos/option/issues/option',
+		defaultAction: 'open',
+	},
+	{
 		path: '/orgs/option/repos/option/pulls',
 		iconPath: 'src/actions/orgs/option/repos/option/pulls/pull_logo.png',
 		description: 'List all the pull requests of the repo',
 		defaultAction: 'open',
 	},
 	{
+		path: '/orgs/option/repos/option/pulls/option',
+		defaultAction: 'open',
+	},
+	{
 		path: '/orgs/option/repos',
 		iconPath: 'src/actions/orgs/option/repos/repo_logo.png',
 		description: 'List all the repos',
-		defaultAction: 'open',
 	},
+	{
+		path: '/orgs/option/repos/option',
+		defaultAction: 'open',
+	},	
 	{
 		path: '/orgs',
 		iconPath: 'src/actions/orgs/org_logo.png',
 		description: 'List all the organizations',
-		defaultAction: 'open',
 	},
 ]
 
